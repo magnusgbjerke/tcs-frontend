@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+import { Navbar } from "@/components/Navbar";
 
 const roboto = Roboto({
   weight: "400",
@@ -23,28 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${roboto.className} antialiased`}>
         <div className="">
-          <header className="bg-primary-400 h-[60px] justify-items-center sticky">
-            <div className="max-w-[1440px] w-full">
-              <section className="flex justify-between items-center p-4">
-                <p>
-                  <Link href="/">
-                    <strong>[Logo]</strong>
-                  </Link>
-                  <Link href="/men">
-                    <strong>[Button: Men]</strong>
-                  </Link>
-                  <Link href="/women">
-                    <strong>[Button: Women]</strong>
-                  </Link>
-                  <Link href="/kids">
-                    <strong>[Button: Kids]</strong>
-                  </Link>
-                </p>
-                <p className="absolute left-1/2 transform -translate-x-1/2"></p>
-                <p>[Searchbar][Icon: Profile][Icon: Cart]</p>
-              </section>
-            </div>
-          </header>
+          <Navbar />
           <main className="justify-items-center">
             <div className="max-w-[1440px] w-full">{children}</div>
           </main>
