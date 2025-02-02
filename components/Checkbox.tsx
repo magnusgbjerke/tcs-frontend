@@ -1,6 +1,6 @@
-type Props = {
+interface Props {
   checked?: boolean;
-};
+}
 
 export function Checkbox({ checked = false }: Props) {
   const baseStyles =

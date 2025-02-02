@@ -2,11 +2,11 @@ import HalfFilledHangerSVG from "../assets/half-filled-hanger.svg";
 import filledHangerSVG from "../assets/filled-hanger.svg";
 import EmptyHangerSVG from "../assets/hanger.svg";
 
-type PropsHanger = {
+interface PropsHanger {
   type: "filled" | "half" | "empty";
   disabled?: boolean;
   onClick?: () => void;
-};
+}
 
 function Hanger({ type = "filled", disabled, onClick }: PropsHanger) {
   const hangerStyle = {
@@ -24,11 +24,11 @@ function Hanger({ type = "filled", disabled, onClick }: PropsHanger) {
   );
 }
 
-type PropsRating = {
+interface PropsRating {
   averageRating: number;
   disabled?: boolean;
   onClick: (index: number) => void;
-};
+}
 
 export function HangerRating({
   averageRating,

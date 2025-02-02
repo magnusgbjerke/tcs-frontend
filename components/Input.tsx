@@ -1,11 +1,11 @@
-type Props = {
+interface Props {
   className?: string;
   disabled?: boolean;
   size?: "sm" | "md" | "lg";
   placeholder: string;
   value: string;
   onChange: (value: string) => void;
-};
+}
 
 export function Input({
   className = "",

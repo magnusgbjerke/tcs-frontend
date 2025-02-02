@@ -1,10 +1,10 @@
-type Props = {
+interface Props {
   children: React.ReactNode;
   className?: string;
   disabled?: boolean;
   size?: "sm" | "md" | "lg";
   onClick: () => void;
-};
+}
 
 export const Button: React.FC<Props> = ({
   children,

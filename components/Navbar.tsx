@@ -2,20 +2,9 @@
 
 import Link from "next/link";
 import { Searchbar } from "./Searchbar";
+import { mockSearch } from "@/mocks/searchbar";
 
 export const Navbar = () => {
-  const exampleData = [
-    "T-shirt",
-    "Jeans",
-    "Hoodie",
-    "Jacket",
-    "Sneakers",
-    "Boots",
-    "Dress",
-    "Hat",
-    "Scarf",
-    "Socks",
-  ];
   return (
     <header className="bg-primary-400 h-[60px] justify-items-center sticky">
       <div className="max-w-[1440px] w-full">
@@ -35,14 +24,12 @@ export const Navbar = () => {
               <strong>[Button: Kids]</strong>
             </Link>
           </div>
-          <div className="absolute left-1/2 transform -translate-x-1/2">
-            middle
-          </div>
+          <div className="absolute left-1/2 transform -translate-x-1/2"></div>
           <div className="flex">
             <Searchbar
               placeholder={"Search for products..."}
-              data={exampleData}
-              onSearch={(q) => console.log(q)}
+              data={mockSearch}
+              onSearch={() => {}}
               size="xs"
             />
             <p className="text-nowrap">[Icon: Profile]</p>

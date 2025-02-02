@@ -1,7 +1,7 @@
-type Props = {
+interface Props {
   children: React.ReactNode;
   img: string;
-};
+}
 
 // Picture ratio 1: 1,5
 

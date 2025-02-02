@@ -1,14 +1,20 @@
-type Props = {
+interface Props {
   stock: number;
-};
+}
 
 type StockStatus = "many" | "some" | "empty";
 
 export function StockIndicator({ stock }: Props) {
   const stockStyles = {
-    many: "w-24 h-24 bg-green-500 rounded-full",
-    some: "w-24 h-24 bg-yellow-500 rounded-full",
-    empty: "w-24 h-24 bg-red-500 rounded-full",
+    many: "bg-green-500",
+    some: "bg-yellow-500",
+    empty: "bg-red-500",
+  };
+
+  const stockText = {
+    many: "Many left",
+    some: "Not many left",
+    empty: "Empty",
   };
 
   let stockStatus: StockStatus;
@@ -20,5 +26,12 @@ export function StockIndicator({ stock }: Props) {
     stockStatus = "many";
   }
 
-  return <div className={`${stockStyles[stockStatus]}`}></div>;
+  return (
+    <div className="flex flex-nowrap items-center gap-2">
+      <div
+        className={`aspect-square w-3 rounded-full ${stockStyles[stockStatus]}`}
+      ></div>
+      <p className="text-sm">{stockText[stockStatus]}</p>
+    </div>
+  );
 }
