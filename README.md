@@ -10,4 +10,4 @@ The Clothing Store is an online clothing store created as a part of a school pro
 
 ## Goal
 
-![tcs-goal](https://github.com/magnusgbjerke/tcs-frontend/blob/main/tcs-goal.png)
+![tcs-goal](https://github.com/magnusgbjerke/tcs-frontend/blob/main/preview/tcs-goal.png)
