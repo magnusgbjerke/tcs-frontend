@@ -12,9 +12,9 @@ export function StockIndicator({ stock }: Props) {
   };
 
   const stockText = {
-    many: "Many left",
+    many: "In stock",
     some: "Not many left",
-    empty: "Empty",
+    empty: "Not in stock",
   };
 
   let stockStatus: StockStatus;
