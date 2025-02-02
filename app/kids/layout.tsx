@@ -10,10 +10,5 @@ export default function Page({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <div>
-      <header>[Breadcrumbs/Nav]</header>
-      {children}
-    </div>
-  );
+  return <div>{children}</div>;
 }
