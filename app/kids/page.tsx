@@ -1,3 +1,36 @@
+"use client";
+
+import { Breadcrumbs, BreadcrumbItem } from "@/components/Breadcrumbs";
+import { usePathname } from "next/navigation";
+
 export default function Home() {
-  return <p>Kids</p>;
+  const [customerCategory, productCategory] = usePathname()
+    .toString()
+    .split("/")
+    .filter(Boolean);
+
+  const items: BreadcrumbItem[] = [
+    { title: "Home", href: "/" },
+    ...(customerCategory
+      ? [{ title: customerCategory, href: `/${customerCategory}` }]
+      : []),
+    ...(productCategory
+      ? [
+          {
+            title: productCategory,
+            href: `/${customerCategory}/${productCategory}`,
+          },
+        ]
+      : []),
+  ];
+
+  return (
+    <div>
+      {" "}
+      <header>
+        <Breadcrumbs items={items} />
+      </header>
+      <p>Kids</p>
+    </div>
+  );
 }
