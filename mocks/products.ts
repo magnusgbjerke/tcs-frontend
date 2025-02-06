@@ -11,7 +11,7 @@ export const mockProducts: Product[] = [
     customerCategory: "men",
     productCategory: "clothes",
     stock: [
-      { size: "medium", quantity: 5 },
+      { size: "M", quantity: 5 },
       { size: "S", quantity: 5 },
     ],
   },
