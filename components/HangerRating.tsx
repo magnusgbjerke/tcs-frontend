@@ -1,23 +1,21 @@
-import HalfFilledHangerSVG from "../assets/half-filled-hanger.svg";
-import filledHangerSVG from "../assets/filled-hanger.svg";
-import EmptyHangerSVG from "../assets/hanger.svg";
-
 interface PropsHanger {
   type: "filled" | "half" | "empty";
   disabled?: boolean;
   onClick?: () => void;
+  width?: number;
 }
 
-function Hanger({ type = "filled", disabled, onClick }: PropsHanger) {
+function Hanger({ type = "filled", disabled, onClick, width }: PropsHanger) {
   const hangerStyle = {
-    filled: filledHangerSVG,
-    half: HalfFilledHangerSVG,
-    empty: EmptyHangerSVG,
+    filled: "assets/filled-hanger.svg",
+    half: "assets/half-filled-hanger.svg",
+    empty: "assets/hanger.svg",
   };
 
   return (
     <img
       src={hangerStyle[type]}
+      width={width}
       onClick={disabled ? undefined : onClick}
       className={`${disabled ? "" : "cursor-pointer"}`}
     />
@@ -28,12 +26,14 @@ interface PropsRating {
   averageRating: number;
   disabled?: boolean;
   onClick: (index: number) => void;
+  width?: number;
 }
 
 export function HangerRating({
   averageRating,
   disabled = false,
   onClick,
+  width = 100,
 }: PropsRating) {
   function roundHalf(num: number) {
     return Math.round(num * 2) / 2;
@@ -162,13 +162,14 @@ export function HangerRating({
   return (
     <div className="flex">
       {items.map((item, index) => (
-        <p key={index}>
+        <div key={index}>
           <Hanger
             type={item.type}
             disabled={disabled}
             onClick={() => onClick(index)}
+            width={width}
           />
-        </p>
+        </div>
       ))}
     </div>
   );
