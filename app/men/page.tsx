@@ -1,9 +1,9 @@
 "use client";
 
-import { Breadcrumbs, BreadcrumbItem } from "@/components/Breadcrumbs";
-import { Card } from "@/components/Card";
-import { HangerRating } from "@/components/HangerRating";
-import { StockIndicator } from "@/components/StockIndicator";
+import { Breadcrumbs, BreadcrumbItem } from "@/components/ui/Breadcrumbs";
+import { Card } from "@/components/ui/Card";
+import { HangerRating } from "@/components/ui/HangerRating";
+import { StockIndicator } from "@/components/ui/StockIndicator";
 import { mockProducts } from "@/mocks/products";
 import { Stock } from "@/types/products";
 import { usePathname } from "next/navigation";

@@ -1,6 +1,6 @@
 "use client";
 
-import { Breadcrumbs, BreadcrumbItem } from "@/components/Breadcrumbs";
+import { Breadcrumbs, BreadcrumbItem } from "@/components/ui/Breadcrumbs";
 import { usePathname } from "next/navigation";
 
 export default function Home() {
