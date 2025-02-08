@@ -2,6 +2,7 @@
 
 import { Breadcrumbs, BreadcrumbItem } from "@/components/Breadcrumbs";
 import { Card } from "@/components/Card";
+import { HangerRating } from "@/components/HangerRating";
 import { StockIndicator } from "@/components/StockIndicator";
 import { mockProducts } from "@/mocks/products";
 import { Stock } from "@/types/products";
@@ -37,17 +38,31 @@ export default function Home() {
 
   return (
     <div>
-      {" "}
       <header>
         <Breadcrumbs items={items} />
       </header>
       <div className="flex">
-        <aside>aside</aside>{" "}
-        <div className="grid grid-cols-3 gap-4">
+        <aside className="mr-[350px]">aside</aside>{" "}
+        <div className="flex flex-wrap gap-10">
           {mockProducts.map((item, index) => (
             <div key={index}>
               <Card img={`images/products/${item.image}`}>
-                <StockIndicator stock={largestStock(item.stock)} />
+                <div className="flex justify-between">
+                  <div className="flex flex-col gap-1">
+                    <p>Price</p>
+                    <HangerRating
+                      averageRating={item.rating}
+                      disabled
+                      onClick={() => undefined}
+                      width={23}
+                    />
+                    <StockIndicator stock={largestStock(item.stock)} />
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <p>brand</p>
+                    <p>name</p>
+                  </div>
+                </div>
               </Card>
             </div>
           ))}
