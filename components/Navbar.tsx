@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Searchbar } from "./Searchbar";
+import { Searchbar } from "./ui/Searchbar";
 import { mockSearch } from "@/mocks/searchbar";
 
 export const Navbar = () => {
