@@ -10,5 +10,5 @@ export default function Page({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div>{children}</div>;
+  return children;
 }
