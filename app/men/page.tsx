@@ -1,5 +1,6 @@
 "use client";
 
+import { Sidebar } from "@/components/Sidebar";
 import { Breadcrumbs, BreadcrumbItem } from "@/components/ui/Breadcrumbs";
 import { Card } from "@/components/ui/Card";
 import { HangerRating } from "@/components/ui/HangerRating";
@@ -42,7 +43,7 @@ export default function Home() {
         <Breadcrumbs items={items} />
       </header>
       <div className="flex">
-        <aside className="mr-[350px]">aside</aside>{" "}
+        <Sidebar />
         <div className="flex flex-wrap gap-10">
           {mockProducts.map((item, index) => (
             <div key={index}>
