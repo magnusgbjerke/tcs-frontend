@@ -1,5 +1,3 @@
-"use client";
-
 import { Sidebar } from "@/components/Sidebar";
 import { Breadcrumbs, BreadcrumbItem } from "@/components/ui/Breadcrumbs";
 import { Card } from "@/components/ui/Card";
@@ -7,27 +5,24 @@ import { HangerRating } from "@/components/ui/HangerRating";
 import { StockIndicator } from "@/components/ui/StockIndicator";
 import { mockProducts } from "@/mocks/products";
 import { Stock } from "@/types/products";
-import { usePathname } from "next/navigation";
+import { notFound } from "next/navigation";
 
-export default function Home() {
-  const [customerCategory, productCategory] = usePathname()
-    .toString()
-    .split("/")
-    .filter(Boolean);
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ customerCategory: string }>;
+}) {
+  const { customerCategory } = await params;
+
+  const validSlugs = ["men", "women", "kids"];
+
+  if (!validSlugs.includes(customerCategory)) {
+    return notFound();
+  }
 
   const items: BreadcrumbItem[] = [
     { title: "Home", href: "/" },
-    ...(customerCategory
-      ? [{ title: customerCategory, href: `/${customerCategory}` }]
-      : []),
-    ...(productCategory
-      ? [
-          {
-            title: productCategory,
-            href: `/${customerCategory}/${productCategory}`,
-          },
-        ]
-      : []),
+    { title: `${customerCategory}`, href: `/${customerCategory}` },
   ];
 
   function largestStock(stocks: Stock[]) {
