@@ -1,5 +1,5 @@
-import customerCategoryPage from "./customerCategoryPage";
-import productPage from "./productPage";
+import { CustomerCategoryPage } from "./customerCategoryPage";
+import { ProductPage } from "./productPage";
 
 export default async function Page({
   params,
@@ -11,8 +11,8 @@ export default async function Page({
   const validSlugs = ["men", "women", "kids"];
 
   if (validSlugs.includes(customerCategory)) {
-    return customerCategoryPage(customerCategory);
+    return <CustomerCategoryPage customerCategory={customerCategory} />;
   } else {
-    return productPage(customerCategory);
+    return <ProductPage productId={customerCategory} />;
   }
 }

@@ -3,10 +3,16 @@ import { Breadcrumbs, BreadcrumbItem } from "@/components/ui/Breadcrumbs";
 import { Card } from "@/components/ui/Card";
 import { HangerRating } from "@/components/ui/HangerRating";
 import { StockIndicator } from "@/components/ui/StockIndicator";
-import { mockProducts } from "@/mocks/products";
 import { Stock } from "@/types/products";
 
-export default async function customerCategoryPage(customerCategory: string) {
+export async function CustomerCategoryPage({
+  customerCategory,
+}: {
+  customerCategory: string;
+}) {
+  const response = await fetch("http://localhost:8080/api/products");
+  const products = await response.json();
+
   const items: BreadcrumbItem[] = [
     { title: "Home", href: "/" },
     { title: `${customerCategory}`, href: `/${customerCategory}` },
@@ -27,7 +33,7 @@ export default async function customerCategoryPage(customerCategory: string) {
       <div className="flex">
         <Sidebar />
         <div className="flex flex-wrap gap-10">
-          {mockProducts.map((item, index) => (
+          {products.map((item, index) => (
             <div key={index}>
               <Card img={`images/products/${item.image}`}>
                 <div className="flex justify-between">
