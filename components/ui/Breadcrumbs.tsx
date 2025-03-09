@@ -17,11 +17,16 @@ function capitalizeFirstLetter(word: string): string {
 export function Breadcrumbs({ items = [] }: Props) {
   return (
     <>
-      <div className="flex">
+      <div className="flex items-center space-x-2">
         {items.map((item, index) => (
-          <div key={index}>
-            <a href={item.href}>{capitalizeFirstLetter(item.title)}</a>
-            {index === items.length - 1 ? "" : " > "}
+          <div key={index} className="flex items-center">
+            <a 
+              href={item.href} 
+              className={index === items.length - 1 ? "font-bold" : "text-gray-500 hover:text-gray-700"}
+            >
+              {capitalizeFirstLetter(item.title)}
+            </a>
+            {index !== items.length - 1 && <span className="mx-2 text-gray-400">/</span>}
           </div>
         ))}
       </div>
