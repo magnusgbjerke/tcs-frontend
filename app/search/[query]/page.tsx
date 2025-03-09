@@ -14,7 +14,6 @@ export default async function Page({
   let products: Product[] = [];
 
   if (process.env.NODE_ENV === "development") {
-    console.log("Running in development mode");
     const response = await fetch(`http://localhost:8080/api/products`);
     if (!response.ok) throw new Error("Failed to fetch users");
     const data = await response.json();
@@ -22,7 +21,6 @@ export default async function Page({
       item.name.toLowerCase().includes(query)
     );
   } else if (process.env.NODE_ENV === "production") {
-    console.log("Running in production mode");
     const response = await fetch(
       `http://localhost:8080/api/products?search=${query}`
     );
