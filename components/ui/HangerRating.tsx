@@ -39,7 +39,7 @@ export function HangerRating({
     return Math.round(num * 2) / 2;
   }
 
-  let rounded = roundHalf(averageRating);
+  const rounded = roundHalf(averageRating);
 
   let items: Array<PropsHanger> = [];
 
