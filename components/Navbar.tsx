@@ -15,12 +15,12 @@ export const Navbar = () => {
       if (!response.ok) throw new Error("Failed to fetch users");
       const data = await response.json();
       const results = data.filter((item: Product) =>
-        item.name.toLowerCase().includes(query)
+        item.name.toLowerCase().includes(query),
       );
       setFilteredData(results);
     } else if (process.env.NODE_ENV === "production") {
       const response = await fetch(
-        `http://localhost:8080/api/products?search=${query}`
+        `http://localhost:8080/api/products?search=${query}`,
       );
       if (!response.ok) throw new Error("Failed to fetch users");
       const data = await response.json();
@@ -35,7 +35,7 @@ export const Navbar = () => {
 
   const router2 = useRouter();
   const onClickHandler = (item: Product) => {
-    router2.push(`../${item.id.toString()}`);
+    router2.push(`/${item.id.toString()}`);
   };
 
   return (

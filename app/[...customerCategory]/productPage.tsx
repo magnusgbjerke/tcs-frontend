@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 
 export async function ProductPage({ productId }: { productId: string }) {
   const response = await fetch(
-    `http://localhost:8080/api/products/${productId}`
+    `http://localhost:8080/api/products/${productId}`,
   );
 
   if (!response.ok) {
