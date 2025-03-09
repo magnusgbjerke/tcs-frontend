@@ -3,7 +3,7 @@ import { Breadcrumbs, BreadcrumbItem } from "@/components/ui/Breadcrumbs";
 import { Card } from "@/components/ui/Card";
 import { HangerRating } from "@/components/ui/HangerRating";
 import { StockIndicator } from "@/components/ui/StockIndicator";
-import { Stock } from "@/types/products";
+import { Product, Stock } from "@/types/products";
 
 export async function CustomerCategoryPage({
   customerCategory,
@@ -33,9 +33,9 @@ export async function CustomerCategoryPage({
       <div className="flex">
         <Sidebar />
         <div className="flex flex-wrap gap-10">
-          {products.map((item, index) => (
+          {products.map((item: Product, index: number) => (
             <div key={index}>
-              <Card img={`images/products/${item.image}`}>
+              <Card img={`/images/products/${item.image}`}>
                 <div className="flex justify-between">
                   <div className="flex flex-col gap-1">
                     <p>Price</p>

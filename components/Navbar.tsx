@@ -2,9 +2,48 @@
 
 import Link from "next/link";
 import { Searchbar } from "./ui/Searchbar";
-import { mockSearch } from "@/mocks/searchbar";
+import { useState } from "react";
+import { Product } from "@/types/products";
+import { useRouter } from "next/navigation";
 
 export const Navbar = () => {
+  const [filteredData, setFilteredData] = useState<string[]>([]);
+
+  const onChangeHandler = async (query: string) => {
+    if (process.env.NODE_ENV === "development") {
+      console.log("Running in development mode");
+      try {
+        const response = await fetch(`http://localhost:8080/api/products`);
+        if (!response.ok) throw new Error("Failed to fetch users");
+        const data = await response.json();
+        const results = data.filter((item: Product) =>
+          item.name.toLowerCase().includes(query)
+        );
+        setFilteredData(results);
+      } catch (err) {}
+    } else if (process.env.NODE_ENV === "production") {
+      console.log("Running in production mode");
+      try {
+        const response = await fetch(
+          `http://localhost:8080/api/products?search=${query}`
+        );
+        if (!response.ok) throw new Error("Failed to fetch users");
+        const data = await response.json();
+        setFilteredData(data);
+      } catch (err) {}
+    }
+  };
+
+  const router1 = useRouter();
+  const onSearchHandler = (query: string) => {
+    router1.push(`/search/${query}`);
+  };
+
+  const router2 = useRouter();
+  const onClickHandler = (item: Product) => {
+    router2.push(`../${item.id.toString()}`);
+  };
+
   return (
     <header className="bg-primary-400 max-h-[60px] justify-items-center">
       <div className="max-w-[1440px] w-full">
@@ -28,23 +67,25 @@ export const Navbar = () => {
           <div className="flex gap-2">
             <Searchbar
               placeholder={"Search for products..."}
-              data={mockSearch}
-              onSearch={(query) => {
-                alert(`Searched for: ${query}`);
-              }}
+              data={filteredData}
+              onSearch={(query) => onSearchHandler(query)}
+              onChange={(query) => onChangeHandler(query)}
+              onClick={(item) => onClickHandler(item)}
               size="xs"
             />
             <img
-              src={"assets/circle-user-round.svg"}
+              src={"/assets/circle-user-round.svg"}
               width={40}
               onClick={() => alert("user")}
               className={`cursor-pointer`}
+              alt="1"
             />
             <img
-              src={"assets/shopping-cart.svg"}
+              src={"/assets/shopping-cart.svg"}
               width={40}
               onClick={() => alert("cart")}
               className={`cursor-pointer`}
+              alt="2"
             />
           </div>
         </section>

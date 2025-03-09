@@ -18,7 +18,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function Page({
+export default async function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
