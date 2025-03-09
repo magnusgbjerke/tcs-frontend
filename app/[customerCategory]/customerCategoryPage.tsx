@@ -19,7 +19,7 @@ export async function CustomerCategoryPage({
   ];
 
   function largestStock(stocks: Stock[]) {
-    let temp: number[] = [];
+    const temp: number[] = [];
     stocks.forEach((x) => temp.push(x.quantity));
     const highest = Math.max(...temp);
     return highest;

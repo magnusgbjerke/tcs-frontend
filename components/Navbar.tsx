@@ -12,25 +12,23 @@ export const Navbar = () => {
   const onChangeHandler = async (query: string) => {
     if (process.env.NODE_ENV === "development") {
       console.log("Running in development mode");
-      try {
-        const response = await fetch(`http://localhost:8080/api/products`);
-        if (!response.ok) throw new Error("Failed to fetch users");
-        const data = await response.json();
-        const results = data.filter((item: Product) =>
-          item.name.toLowerCase().includes(query)
-        );
-        setFilteredData(results);
-      } catch (err) {}
+
+      const response = await fetch(`http://localhost:8080/api/products`);
+      if (!response.ok) throw new Error("Failed to fetch users");
+      const data = await response.json();
+      const results = data.filter((item: Product) =>
+        item.name.toLowerCase().includes(query)
+      );
+      setFilteredData(results);
     } else if (process.env.NODE_ENV === "production") {
       console.log("Running in production mode");
-      try {
-        const response = await fetch(
-          `http://localhost:8080/api/products?search=${query}`
-        );
-        if (!response.ok) throw new Error("Failed to fetch users");
-        const data = await response.json();
-        setFilteredData(data);
-      } catch (err) {}
+
+      const response = await fetch(
+        `http://localhost:8080/api/products?search=${query}`
+      );
+      if (!response.ok) throw new Error("Failed to fetch users");
+      const data = await response.json();
+      setFilteredData(data);
     }
   };
 
