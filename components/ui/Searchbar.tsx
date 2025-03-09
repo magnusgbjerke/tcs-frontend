@@ -4,8 +4,10 @@ import React, { useEffect, useRef, useState } from "react";
 
 interface SearchbarProps {
   placeholder: string;
-  data: string[];
+  data: any[];
   onSearch: (query: string) => void;
+  onChange: (query: string) => void;
+  onClick: (query: any) => void;
   size?: "xs" | "sm" | "md" | "lg" | "full";
 }
 
@@ -13,10 +15,11 @@ export const Searchbar: React.FC<SearchbarProps> = ({
   placeholder,
   data,
   onSearch,
+  onChange,
+  onClick,
   size = "md",
 }) => {
   const [query, setQuery] = useState("");
-  const [filteredData, setFilteredData] = useState<string[]>([]);
   const [isOpen, setIsOpen] = useState(false);
   const searchBarRef = useRef<HTMLDivElement | null>(null);
 
@@ -33,20 +36,17 @@ export const Searchbar: React.FC<SearchbarProps> = ({
     const searchQuery = e.target.value.toLowerCase();
 
     if (searchQuery.length > 0) {
-      // Filter data based on input
-      const results = data.filter((item) =>
-        item.toLowerCase().includes(searchQuery)
-      );
-      setFilteredData(results);
+      onChange(searchQuery.toLowerCase());
       setIsOpen(true);
     } else {
-      setFilteredData([]);
       setIsOpen(false);
     }
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
+      setQuery("");
+      setIsOpen(false);
       onSearch(query.toLowerCase());
     }
   };
@@ -82,7 +82,11 @@ export const Searchbar: React.FC<SearchbarProps> = ({
           className="flex-grow px-4 py-2 text-primary-900 bg-transparent focus:outline-none"
         />
         <button
-          onClick={() => onSearch(query.toLowerCase())}
+          onClick={() => {
+            setQuery("");
+            setIsOpen(false);
+            onSearch(query.toLowerCase());
+          }}
           className="px-4 py-2 rounded-lg hover:bg-gray-200"
         >
           🔍
@@ -94,14 +98,18 @@ export const Searchbar: React.FC<SearchbarProps> = ({
         <ul
           className={`mt-2 bg-white border border-gray-300 rounded-lg shadow-sm absolute w-full ${sizeStyles[size]}`}
         >
-          {filteredData.length > 0 ? (
-            filteredData.map((item, index) => (
+          {data.length > 0 ? (
+            data.map((item: any, index: number) => (
               <li
                 key={index}
-                onClick={() => onSearch(item.toLowerCase())}
+                onClick={() => {
+                  setQuery("");
+                  setIsOpen(false);
+                  onClick(item);
+                }}
                 className="px-4 py-2 cursor-pointer rounded-lg hover:bg-primary-100 text-primary-900"
               >
-                {item}
+                {item.name}
               </li>
             ))
           ) : (

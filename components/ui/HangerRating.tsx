@@ -7,9 +7,9 @@ interface PropsHanger {
 
 function Hanger({ type = "filled", disabled, onClick, width }: PropsHanger) {
   const hangerStyle = {
-    filled: "assets/filled-hanger.svg",
-    half: "assets/half-filled-hanger.svg",
-    empty: "assets/hanger.svg",
+    filled: "/assets/filled-hanger.svg",
+    half: "/assets/half-filled-hanger.svg",
+    empty: "/assets/hanger.svg",
   };
 
   return (
