@@ -1,3 +1,8 @@
+/* eslint-disable */
+
+const { faker } = require("@faker-js/faker");
+const { createCanvas } = require("canvas");
+
 function generateProducts() {
   const validCustomerCategory = ["men", "women", "kids"];
   const validType = ["hoodies", "pants", "shoes"];
@@ -95,9 +100,10 @@ function generateProducts() {
   // Price
   ctx.fillStyle = "#000000";
   ctx.font = "40px Arial";
-  ctx.fillText(price, 50, 850);
+  ctx.fillText(price.toString(), 50, 850);
 
   // Save as image
+  const fs = require("fs");
   const buffer = canvas.toBuffer("image/png");
   fs.writeFileSync(`public/images/products/${image}`, buffer);
 
