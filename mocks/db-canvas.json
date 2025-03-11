@@ -2,5 +2,2556 @@
   "server-status": {
     "status": "ok"
   },
-  "products": []
+  "products": [
+    {
+      "id": "urban-loom-frozen-steel-towels",
+      "name": "Frozen Steel Towels",
+      "brand": "Urban Loom",
+      "description": "Handcrafted Bacon designed with Ceramic for utilized performance",
+      "rating": 4.88,
+      "image": "urban-loom-frozen-steel-towels.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 7648.55,
+      "stock": [
+        { "size": "S", "quantity": 38 },
+        { "size": "M", "quantity": 18 },
+        { "size": "L", "quantity": 70 }
+      ]
+    },
+    {
+      "id": "urban-loom-generic-aluminum-chips",
+      "name": "Generic Aluminum Chips",
+      "brand": "Urban Loom",
+      "description": "Macejkovic LLC's most advanced Chicken technology increases lovely capabilities",
+      "rating": 2.35,
+      "image": "urban-loom-generic-aluminum-chips.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 4865.9,
+      "stock": [
+        { "size": "S", "quantity": 79 },
+        { "size": "M", "quantity": 20 },
+        { "size": "L", "quantity": 4 }
+      ]
+    },
+    {
+      "id": "drift-dune-electronic-granite-chips",
+      "name": "Electronic Granite Chips",
+      "brand": "Drift & Dune",
+      "description": "The sleek and neighboring Tuna comes with black LED lighting for smart functionality",
+      "rating": 2.81,
+      "image": "drift-dune-electronic-granite-chips.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 1401.22,
+      "stock": [
+        { "size": "S", "quantity": 55 },
+        { "size": "M", "quantity": 86 },
+        { "size": "L", "quantity": 4 }
+      ]
+    },
+    {
+      "id": "luxeroots-sleek-cotton-towels",
+      "name": "Sleek Cotton Towels",
+      "brand": "LuxeRoots",
+      "description": "Savor the delicious essence in our Hat, designed for shameless culinary adventures",
+      "rating": 2.91,
+      "image": "luxeroots-sleek-cotton-towels.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 8560.06,
+      "stock": [
+        { "size": "S", "quantity": 57 },
+        { "size": "M", "quantity": 80 },
+        { "size": "L", "quantity": 56 }
+      ]
+    },
+    {
+      "id": "luxeroots-elegant-rubber-bike",
+      "name": "Elegant Rubber Bike",
+      "brand": "LuxeRoots",
+      "description": "Introducing the Democratic Republic of the Congo-inspired Salad, blending acidic style with local craftsmanship",
+      "rating": 0.66,
+      "image": "luxeroots-elegant-rubber-bike.png",
+      "type": "shoes",
+      "customerCategory": "men",
+      "productCategory": "footwear",
+      "price": 3943.46,
+      "stock": [
+        { "size": "S", "quantity": 21 },
+        { "size": "M", "quantity": 0 },
+        { "size": "L", "quantity": 39 }
+      ]
+    },
+    {
+      "id": "velora-electronic-granite-cheese",
+      "name": "Electronic Granite Cheese",
+      "brand": "Velora",
+      "description": "Professional-grade Pants perfect for alert training and recreational use",
+      "rating": 3.16,
+      "image": "velora-electronic-granite-cheese.png",
+      "type": "shoes",
+      "customerCategory": "men",
+      "productCategory": "footwear",
+      "price": 8677.03,
+      "stock": [
+        { "size": "S", "quantity": 89 },
+        { "size": "M", "quantity": 4 },
+        { "size": "L", "quantity": 87 }
+      ]
+    },
+    {
+      "id": "noxen-gorgeous-wooden-sausages",
+      "name": "Gorgeous Wooden Sausages",
+      "brand": "Noxen",
+      "description": "Refined Computer designed with Metal for livid performance",
+      "rating": 4.91,
+      "image": "noxen-gorgeous-wooden-sausages.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 9684.96,
+      "stock": [
+        { "size": "S", "quantity": 78 },
+        { "size": "M", "quantity": 83 },
+        { "size": "L", "quantity": 62 }
+      ]
+    },
+    {
+      "id": "urban-loom-refined-marble-shoes",
+      "name": "Refined Marble Shoes",
+      "brand": "Urban Loom",
+      "description": "New Table model with 95 GB RAM, 4 GB storage, and impolite features",
+      "rating": 0.02,
+      "image": "urban-loom-refined-marble-shoes.png",
+      "type": "hoodies",
+      "customerCategory": "men",
+      "productCategory": "tops",
+      "price": 8262.37,
+      "stock": [
+        { "size": "S", "quantity": 89 },
+        { "size": "M", "quantity": 63 },
+        { "size": "L", "quantity": 24 }
+      ]
+    },
+    {
+      "id": "luxeroots-oriental-ceramic-mouse",
+      "name": "Oriental Ceramic Mouse",
+      "brand": "LuxeRoots",
+      "description": "The Dalton Hat is the latest in a series of oval products from Pacocha - Larkin",
+      "rating": 0.57,
+      "image": "luxeroots-oriental-ceramic-mouse.png",
+      "type": "shoes",
+      "customerCategory": "men",
+      "productCategory": "footwear",
+      "price": 2687.62,
+      "stock": [
+        { "size": "S", "quantity": 66 },
+        { "size": "M", "quantity": 11 },
+        { "size": "L", "quantity": 92 }
+      ]
+    },
+    {
+      "id": "drift-dune-gorgeous-ceramic-chips",
+      "name": "Gorgeous Ceramic Chips",
+      "brand": "Drift & Dune",
+      "description": "Wisozk - Kirlin's most advanced Pizza technology increases bruised capabilities",
+      "rating": 1.69,
+      "image": "drift-dune-gorgeous-ceramic-chips.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 3482.47,
+      "stock": [
+        { "size": "S", "quantity": 11 },
+        { "size": "M", "quantity": 77 },
+        { "size": "L", "quantity": 56 }
+      ]
+    },
+    {
+      "id": "drift-dune-refined-cotton-gloves",
+      "name": "Refined Cotton Gloves",
+      "brand": "Drift & Dune",
+      "description": "Featuring Nobelium-enhanced technology, our Bike offers unparalleled assured performance",
+      "rating": 1.66,
+      "image": "drift-dune-refined-cotton-gloves.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 5746.24,
+      "stock": [
+        { "size": "S", "quantity": 56 },
+        { "size": "M", "quantity": 45 },
+        { "size": "L", "quantity": 0 }
+      ]
+    },
+    {
+      "id": "luxeroots-ergonomic-concrete-bike",
+      "name": "Ergonomic Concrete Bike",
+      "brand": "LuxeRoots",
+      "description": "Featuring Chromium-enhanced technology, our Table offers unparalleled wrong performance",
+      "rating": 0.63,
+      "image": "luxeroots-ergonomic-concrete-bike.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 9425.33,
+      "stock": [
+        { "size": "S", "quantity": 4 },
+        { "size": "M", "quantity": 31 },
+        { "size": "L", "quantity": 23 }
+      ]
+    },
+    {
+      "id": "noxen-recycled-marble-car",
+      "name": "Recycled Marble Car",
+      "brand": "Noxen",
+      "description": "Discover the optimistic new Bacon with an exciting mix of Marble ingredients",
+      "rating": 3.42,
+      "image": "noxen-recycled-marble-car.png",
+      "type": "shoes",
+      "customerCategory": "men",
+      "productCategory": "footwear",
+      "price": 8736.81,
+      "stock": [
+        { "size": "S", "quantity": 80 },
+        { "size": "M", "quantity": 0 },
+        { "size": "L", "quantity": 60 }
+      ]
+    },
+    {
+      "id": "luxeroots-gorgeous-aluminum-towels",
+      "name": "Gorgeous Aluminum Towels",
+      "brand": "LuxeRoots",
+      "description": "Champlin - Schmeler's most advanced Hat technology increases crooked capabilities",
+      "rating": 4.52,
+      "image": "luxeroots-gorgeous-aluminum-towels.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 4241.08,
+      "stock": [
+        { "size": "S", "quantity": 86 },
+        { "size": "M", "quantity": 97 },
+        { "size": "L", "quantity": 30 }
+      ]
+    },
+    {
+      "id": "luxeroots-handmade-cotton-salad",
+      "name": "Handmade Cotton Salad",
+      "brand": "LuxeRoots",
+      "description": "Discover the hard-to-find new Shoes with an exciting mix of Marble ingredients",
+      "rating": 3.73,
+      "image": "luxeroots-handmade-cotton-salad.png",
+      "type": "hoodies",
+      "customerCategory": "men",
+      "productCategory": "tops",
+      "price": 1055.39,
+      "stock": [
+        { "size": "S", "quantity": 96 },
+        { "size": "M", "quantity": 72 },
+        { "size": "L", "quantity": 52 }
+      ]
+    },
+    {
+      "id": "luxeroots-gorgeous-marble-shirt",
+      "name": "Gorgeous Marble Shirt",
+      "brand": "LuxeRoots",
+      "description": "Stylish Chair designed to make you stand out with next looks",
+      "rating": 3.08,
+      "image": "luxeroots-gorgeous-marble-shirt.png",
+      "type": "hoodies",
+      "customerCategory": "men",
+      "productCategory": "tops",
+      "price": 6696.41,
+      "stock": [
+        { "size": "S", "quantity": 61 },
+        { "size": "M", "quantity": 60 },
+        { "size": "L", "quantity": 46 }
+      ]
+    },
+    {
+      "id": "drift-dune-tasty-cotton-computer",
+      "name": "Tasty Cotton Computer",
+      "brand": "Drift & Dune",
+      "description": "New green Computer with ergonomic design for likable comfort",
+      "rating": 4.64,
+      "image": "drift-dune-tasty-cotton-computer.png",
+      "type": "hoodies",
+      "customerCategory": "men",
+      "productCategory": "tops",
+      "price": 5227.76,
+      "stock": [
+        { "size": "S", "quantity": 87 },
+        { "size": "M", "quantity": 93 },
+        { "size": "L", "quantity": 3 }
+      ]
+    },
+    {
+      "id": "urban-loom-fresh-marble-shirt",
+      "name": "Fresh Marble Shirt",
+      "brand": "Urban Loom",
+      "description": "Dooley LLC's most advanced Salad technology increases our capabilities",
+      "rating": 4.94,
+      "image": "urban-loom-fresh-marble-shirt.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 605.45,
+      "stock": [
+        { "size": "S", "quantity": 9 },
+        { "size": "M", "quantity": 10 },
+        { "size": "L", "quantity": 20 }
+      ]
+    },
+    {
+      "id": "drift-dune-awesome-rubber-ball",
+      "name": "Awesome Rubber Ball",
+      "brand": "Drift & Dune",
+      "description": "The indigo Keyboard combines Kyrgyz Republic aesthetics with Argon-based durability",
+      "rating": 3.98,
+      "image": "drift-dune-awesome-rubber-ball.png",
+      "type": "shoes",
+      "customerCategory": "men",
+      "productCategory": "footwear",
+      "price": 1874.04,
+      "stock": [
+        { "size": "S", "quantity": 98 },
+        { "size": "M", "quantity": 37 },
+        { "size": "L", "quantity": 0 }
+      ]
+    },
+    {
+      "id": "drift-dune-gorgeous-silk-keyboard",
+      "name": "Gorgeous Silk Keyboard",
+      "brand": "Drift & Dune",
+      "description": "The Virtual optimizing budgetary management Car offers reliable performance and grim design",
+      "rating": 1.42,
+      "image": "drift-dune-gorgeous-silk-keyboard.png",
+      "type": "shoes",
+      "customerCategory": "men",
+      "productCategory": "footwear",
+      "price": 9211.58,
+      "stock": [
+        { "size": "S", "quantity": 99 },
+        { "size": "M", "quantity": 95 },
+        { "size": "L", "quantity": 43 }
+      ]
+    },
+    {
+      "id": "urban-loom-electronic-bamboo-chicken",
+      "name": "Electronic Bamboo Chicken",
+      "brand": "Urban Loom",
+      "description": "Experience the orange brilliance of our Pants, perfect for roasted environments",
+      "rating": 2.74,
+      "image": "urban-loom-electronic-bamboo-chicken.png",
+      "type": "shoes",
+      "customerCategory": "men",
+      "productCategory": "footwear",
+      "price": 7071.72,
+      "stock": [
+        { "size": "S", "quantity": 97 },
+        { "size": "M", "quantity": 64 },
+        { "size": "L", "quantity": 12 }
+      ]
+    },
+    {
+      "id": "velora-handmade-wooden-tuna",
+      "name": "Handmade Wooden Tuna",
+      "brand": "Velora",
+      "description": "Discover the gorilla-like agility of our Computer, perfect for grizzled users",
+      "rating": 4.63,
+      "image": "velora-handmade-wooden-tuna.png",
+      "type": "hoodies",
+      "customerCategory": "men",
+      "productCategory": "tops",
+      "price": 3586.54,
+      "stock": [
+        { "size": "S", "quantity": 85 },
+        { "size": "M", "quantity": 5 },
+        { "size": "L", "quantity": 39 }
+      ]
+    },
+    {
+      "id": "velora-gorgeous-marble-bacon",
+      "name": "Gorgeous Marble Bacon",
+      "brand": "Velora",
+      "description": "The Enhanced bottom-line approach Table offers reliable performance and little design",
+      "rating": 3.07,
+      "image": "velora-gorgeous-marble-bacon.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 5190.85,
+      "stock": [
+        { "size": "S", "quantity": 31 },
+        { "size": "M", "quantity": 48 },
+        { "size": "L", "quantity": 47 }
+      ]
+    },
+    {
+      "id": "drift-dune-refined-wooden-gloves",
+      "name": "Refined Wooden Gloves",
+      "brand": "Drift & Dune",
+      "description": "Handmade Hat designed with Granite for rotten performance",
+      "rating": 3.34,
+      "image": "drift-dune-refined-wooden-gloves.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 1435.34,
+      "stock": [
+        { "size": "S", "quantity": 93 },
+        { "size": "M", "quantity": 69 },
+        { "size": "L", "quantity": 52 }
+      ]
+    },
+    {
+      "id": "noxen-sleek-granite-hat",
+      "name": "Sleek Granite Hat",
+      "brand": "Noxen",
+      "description": "Ergonomic Fish made with Concrete for all-day tired support",
+      "rating": 3.77,
+      "image": "noxen-sleek-granite-hat.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 2126.83,
+      "stock": [
+        { "size": "S", "quantity": 53 },
+        { "size": "M", "quantity": 63 },
+        { "size": "L", "quantity": 66 }
+      ]
+    },
+    {
+      "id": "luxeroots-handcrafted-metal-towels",
+      "name": "Handcrafted Metal Towels",
+      "brand": "LuxeRoots",
+      "description": "Stylish Pants designed to make you stand out with vibrant looks",
+      "rating": 2.55,
+      "image": "luxeroots-handcrafted-metal-towels.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 7057.98,
+      "stock": [
+        { "size": "S", "quantity": 22 },
+        { "size": "M", "quantity": 57 },
+        { "size": "L", "quantity": 21 }
+      ]
+    },
+    {
+      "id": "luxeroots-elegant-bronze-mouse",
+      "name": "Elegant Bronze Mouse",
+      "brand": "LuxeRoots",
+      "description": "Stylish Towels designed to make you stand out with glaring looks",
+      "rating": 3.35,
+      "image": "luxeroots-elegant-bronze-mouse.png",
+      "type": "hoodies",
+      "customerCategory": "men",
+      "productCategory": "tops",
+      "price": 2586.48,
+      "stock": [
+        { "size": "S", "quantity": 80 },
+        { "size": "M", "quantity": 95 },
+        { "size": "L", "quantity": 48 }
+      ]
+    },
+    {
+      "id": "luxeroots-electronic-bamboo-salad",
+      "name": "Electronic Bamboo Salad",
+      "brand": "LuxeRoots",
+      "description": "Discover the monkey-like agility of our Cheese, perfect for best users",
+      "rating": 2.23,
+      "image": "luxeroots-electronic-bamboo-salad.png",
+      "type": "shoes",
+      "customerCategory": "men",
+      "productCategory": "footwear",
+      "price": 4709.97,
+      "stock": [
+        { "size": "S", "quantity": 38 },
+        { "size": "M", "quantity": 31 },
+        { "size": "L", "quantity": 39 }
+      ]
+    },
+    {
+      "id": "urban-loom-awesome-plastic-chicken",
+      "name": "Awesome Plastic Chicken",
+      "brand": "Urban Loom",
+      "description": "Innovative Bacon featuring celebrated technology and Bamboo construction",
+      "rating": 4.99,
+      "image": "urban-loom-awesome-plastic-chicken.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 818.95,
+      "stock": [
+        { "size": "S", "quantity": 27 },
+        { "size": "M", "quantity": 49 },
+        { "size": "L", "quantity": 14 }
+      ]
+    },
+    {
+      "id": "urban-loom-fresh-bamboo-fish",
+      "name": "Fresh Bamboo Fish",
+      "brand": "Urban Loom",
+      "description": "Savor the crunchy essence in our Computer, designed for strong culinary adventures",
+      "rating": 1.12,
+      "image": "urban-loom-fresh-bamboo-fish.png",
+      "type": "hoodies",
+      "customerCategory": "men",
+      "productCategory": "tops",
+      "price": 4490.94,
+      "stock": [
+        { "size": "S", "quantity": 1 },
+        { "size": "M", "quantity": 40 },
+        { "size": "L", "quantity": 4 }
+      ]
+    },
+    {
+      "id": "luxeroots-frozen-aluminum-pizza",
+      "name": "Frozen Aluminum Pizza",
+      "brand": "LuxeRoots",
+      "description": "Refined Sausages designed with Concrete for amazing performance",
+      "rating": 4.83,
+      "image": "luxeroots-frozen-aluminum-pizza.png",
+      "type": "hoodies",
+      "customerCategory": "men",
+      "productCategory": "tops",
+      "price": 1206.19,
+      "stock": [
+        { "size": "S", "quantity": 44 },
+        { "size": "M", "quantity": 38 },
+        { "size": "L", "quantity": 59 }
+      ]
+    },
+    {
+      "id": "velora-ergonomic-steel-chicken",
+      "name": "Ergonomic Steel Chicken",
+      "brand": "Velora",
+      "description": "New cyan Shoes with ergonomic design for which comfort",
+      "rating": 0.31,
+      "image": "velora-ergonomic-steel-chicken.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 1020.21,
+      "stock": [
+        { "size": "S", "quantity": 22 },
+        { "size": "M", "quantity": 33 },
+        { "size": "L", "quantity": 13 }
+      ]
+    },
+    {
+      "id": "noxen-luxurious-concrete-fish",
+      "name": "Luxurious Concrete Fish",
+      "brand": "Noxen",
+      "description": "New Soap model with 40 GB RAM, 566 GB storage, and gleaming features",
+      "rating": 4.05,
+      "image": "noxen-luxurious-concrete-fish.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 8542.62,
+      "stock": [
+        { "size": "S", "quantity": 25 },
+        { "size": "M", "quantity": 67 },
+        { "size": "L", "quantity": 6 }
+      ]
+    },
+    {
+      "id": "luxeroots-intelligent-cotton-car",
+      "name": "Intelligent Cotton Car",
+      "brand": "LuxeRoots",
+      "description": "Licensed Table designed with Gold for difficult performance",
+      "rating": 3.44,
+      "image": "luxeroots-intelligent-cotton-car.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 4814,
+      "stock": [
+        { "size": "S", "quantity": 35 },
+        { "size": "M", "quantity": 4 },
+        { "size": "L", "quantity": 30 }
+      ]
+    },
+    {
+      "id": "noxen-awesome-concrete-shirt",
+      "name": "Awesome Concrete Shirt",
+      "brand": "Noxen",
+      "description": "Ergonomic Table made with Rubber for all-day mature support",
+      "rating": 1.26,
+      "image": "noxen-awesome-concrete-shirt.png",
+      "type": "hoodies",
+      "customerCategory": "men",
+      "productCategory": "tops",
+      "price": 7842,
+      "stock": [
+        { "size": "S", "quantity": 70 },
+        { "size": "M", "quantity": 55 },
+        { "size": "L", "quantity": 87 }
+      ]
+    },
+    {
+      "id": "noxen-luxurious-silk-gloves",
+      "name": "Luxurious Silk Gloves",
+      "brand": "Noxen",
+      "description": "New Bike model with 26 GB RAM, 754 GB storage, and frilly features",
+      "rating": 4.59,
+      "image": "noxen-luxurious-silk-gloves.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 6549.42,
+      "stock": [
+        { "size": "S", "quantity": 39 },
+        { "size": "M", "quantity": 4 },
+        { "size": "L", "quantity": 61 }
+      ]
+    },
+    {
+      "id": "noxen-awesome-plastic-sausages",
+      "name": "Awesome Plastic Sausages",
+      "brand": "Noxen",
+      "description": "Our juicy-inspired Pants brings a taste of luxury to your grave lifestyle",
+      "rating": 3.29,
+      "image": "noxen-awesome-plastic-sausages.png",
+      "type": "hoodies",
+      "customerCategory": "men",
+      "productCategory": "tops",
+      "price": 2616.23,
+      "stock": [
+        { "size": "S", "quantity": 39 },
+        { "size": "M", "quantity": 16 },
+        { "size": "L", "quantity": 17 }
+      ]
+    },
+    {
+      "id": "drift-dune-intelligent-aluminum-soap",
+      "name": "Intelligent Aluminum Soap",
+      "brand": "Drift & Dune",
+      "description": "Experience the plum brilliance of our Fish, perfect for vast environments",
+      "rating": 4.49,
+      "image": "drift-dune-intelligent-aluminum-soap.png",
+      "type": "hoodies",
+      "customerCategory": "men",
+      "productCategory": "tops",
+      "price": 8027.01,
+      "stock": [
+        { "size": "S", "quantity": 84 },
+        { "size": "M", "quantity": 100 },
+        { "size": "L", "quantity": 31 }
+      ]
+    },
+    {
+      "id": "drift-dune-generic-concrete-hat",
+      "name": "Generic Concrete Hat",
+      "brand": "Drift & Dune",
+      "description": "Experience the white brilliance of our Hat, perfect for ignorant environments",
+      "rating": 4.36,
+      "image": "drift-dune-generic-concrete-hat.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 5357.21,
+      "stock": [
+        { "size": "S", "quantity": 30 },
+        { "size": "M", "quantity": 50 },
+        { "size": "L", "quantity": 43 }
+      ]
+    },
+    {
+      "id": "urban-loom-generic-bamboo-soap",
+      "name": "Generic Bamboo Soap",
+      "brand": "Urban Loom",
+      "description": "The lavender Towels combines Israel aesthetics with Livermorium-based durability",
+      "rating": 2.73,
+      "image": "urban-loom-generic-bamboo-soap.png",
+      "type": "shoes",
+      "customerCategory": "men",
+      "productCategory": "footwear",
+      "price": 3815.18,
+      "stock": [
+        { "size": "S", "quantity": 84 },
+        { "size": "M", "quantity": 42 },
+        { "size": "L", "quantity": 94 }
+      ]
+    },
+    {
+      "id": "drift-dune-oriental-wooden-ball",
+      "name": "Oriental Wooden Ball",
+      "brand": "Drift & Dune",
+      "description": "The Ernie Bacon is the latest in a series of subdued products from Watsica LLC",
+      "rating": 0.71,
+      "image": "drift-dune-oriental-wooden-ball.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 9156.72,
+      "stock": [
+        { "size": "S", "quantity": 31 },
+        { "size": "M", "quantity": 60 },
+        { "size": "L", "quantity": 57 }
+      ]
+    },
+    {
+      "id": "drift-dune-refined-marble-computer",
+      "name": "Refined Marble Computer",
+      "brand": "Drift & Dune",
+      "description": "Stylish Shirt designed to make you stand out with glittering looks",
+      "rating": 1.25,
+      "image": "drift-dune-refined-marble-computer.png",
+      "type": "hoodies",
+      "customerCategory": "men",
+      "productCategory": "tops",
+      "price": 7475.03,
+      "stock": [
+        { "size": "S", "quantity": 44 },
+        { "size": "M", "quantity": 25 },
+        { "size": "L", "quantity": 52 }
+      ]
+    },
+    {
+      "id": "urban-loom-modern-concrete-car",
+      "name": "Modern Concrete Car",
+      "brand": "Urban Loom",
+      "description": "Innovative Hat featuring jealous technology and Aluminum construction",
+      "rating": 2.87,
+      "image": "urban-loom-modern-concrete-car.png",
+      "type": "hoodies",
+      "customerCategory": "men",
+      "productCategory": "tops",
+      "price": 8166.12,
+      "stock": [
+        { "size": "S", "quantity": 14 },
+        { "size": "M", "quantity": 73 },
+        { "size": "L", "quantity": 4 }
+      ]
+    },
+    {
+      "id": "drift-dune-handcrafted-cotton-keyboard",
+      "name": "Handcrafted Cotton Keyboard",
+      "brand": "Drift & Dune",
+      "description": "The magenta Hat combines Senegal aesthetics with Mendelevium-based durability",
+      "rating": 1.59,
+      "image": "drift-dune-handcrafted-cotton-keyboard.png",
+      "type": "hoodies",
+      "customerCategory": "men",
+      "productCategory": "tops",
+      "price": 5031.97,
+      "stock": [
+        { "size": "S", "quantity": 83 },
+        { "size": "M", "quantity": 47 },
+        { "size": "L", "quantity": 34 }
+      ]
+    },
+    {
+      "id": "luxeroots-ergonomic-metal-chips",
+      "name": "Ergonomic Metal Chips",
+      "brand": "LuxeRoots",
+      "description": "Innovative Salad featuring lawful technology and Ceramic construction",
+      "rating": 4.31,
+      "image": "luxeroots-ergonomic-metal-chips.png",
+      "type": "hoodies",
+      "customerCategory": "men",
+      "productCategory": "tops",
+      "price": 955.98,
+      "stock": [
+        { "size": "S", "quantity": 90 },
+        { "size": "M", "quantity": 13 },
+        { "size": "L", "quantity": 70 }
+      ]
+    },
+    {
+      "id": "urban-loom-gorgeous-marble-shoes",
+      "name": "Gorgeous Marble Shoes",
+      "brand": "Urban Loom",
+      "description": "The Enhanced attitude-oriented hub Keyboard offers reliable performance and formal design",
+      "rating": 4.95,
+      "image": "urban-loom-gorgeous-marble-shoes.png",
+      "type": "shoes",
+      "customerCategory": "men",
+      "productCategory": "footwear",
+      "price": 4415.33,
+      "stock": [
+        { "size": "S", "quantity": 63 },
+        { "size": "M", "quantity": 42 },
+        { "size": "L", "quantity": 5 }
+      ]
+    },
+    {
+      "id": "noxen-practical-aluminum-hat",
+      "name": "Practical Aluminum Hat",
+      "brand": "Noxen",
+      "description": "Featuring Sodium-enhanced technology, our Tuna offers unparalleled charming performance",
+      "rating": 1.85,
+      "image": "noxen-practical-aluminum-hat.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 2023.95,
+      "stock": [
+        { "size": "S", "quantity": 29 },
+        { "size": "M", "quantity": 66 },
+        { "size": "L", "quantity": 55 }
+      ]
+    },
+    {
+      "id": "noxen-frozen-metal-bacon",
+      "name": "Frozen Metal Bacon",
+      "brand": "Noxen",
+      "description": "The sleek and accurate Salad comes with white LED lighting for smart functionality",
+      "rating": 4.69,
+      "image": "noxen-frozen-metal-bacon.png",
+      "type": "pants",
+      "customerCategory": "men",
+      "productCategory": "bottoms",
+      "price": 4570.76,
+      "stock": [
+        { "size": "S", "quantity": 55 },
+        { "size": "M", "quantity": 7 },
+        { "size": "L", "quantity": 81 }
+      ]
+    },
+    {
+      "id": "luxeroots-unbranded-aluminum-shoes",
+      "name": "Unbranded Aluminum Shoes",
+      "brand": "LuxeRoots",
+      "description": "Our wolf-friendly Shirt ensures those comfort for your pets",
+      "rating": 3.12,
+      "image": "luxeroots-unbranded-aluminum-shoes.png",
+      "type": "shoes",
+      "customerCategory": "men",
+      "productCategory": "footwear",
+      "price": 829.45,
+      "stock": [
+        { "size": "S", "quantity": 58 },
+        { "size": "M", "quantity": 14 },
+        { "size": "L", "quantity": 18 }
+      ]
+    },
+    {
+      "id": "drift-dune-awesome-concrete-towels",
+      "name": "Awesome Concrete Towels",
+      "brand": "Drift & Dune",
+      "description": "The sleek and repentant Sausages comes with turquoise LED lighting for smart functionality",
+      "rating": 0.57,
+      "image": "drift-dune-awesome-concrete-towels.png",
+      "type": "shoes",
+      "customerCategory": "men",
+      "productCategory": "footwear",
+      "price": 1213.65,
+      "stock": [
+        { "size": "S", "quantity": 29 },
+        { "size": "M", "quantity": 73 },
+        { "size": "L", "quantity": 8 }
+      ]
+    },
+    {
+      "id": "drift-dune-oriental-aluminum-gloves",
+      "name": "Oriental Aluminum Gloves",
+      "brand": "Drift & Dune",
+      "description": "New white Shirt with ergonomic design for disloyal comfort",
+      "rating": 0.61,
+      "image": "drift-dune-oriental-aluminum-gloves.png",
+      "type": "pants",
+      "customerCategory": "women",
+      "productCategory": "bottoms",
+      "price": 441.48,
+      "stock": [
+        { "size": "S", "quantity": 75 },
+        { "size": "M", "quantity": 44 },
+        { "size": "L", "quantity": 30 }
+      ]
+    },
+    {
+      "id": "noxen-electronic-ceramic-pants",
+      "name": "Electronic Ceramic Pants",
+      "brand": "Noxen",
+      "description": "Discover the fox-like agility of our Chicken, perfect for fair users",
+      "rating": 4.93,
+      "image": "noxen-electronic-ceramic-pants.png",
+      "type": "hoodies",
+      "customerCategory": "women",
+      "productCategory": "tops",
+      "price": 6988.58,
+      "stock": [
+        { "size": "S", "quantity": 63 },
+        { "size": "M", "quantity": 11 },
+        { "size": "L", "quantity": 69 }
+      ]
+    },
+    {
+      "id": "luxeroots-fresh-wooden-pants",
+      "name": "Fresh Wooden Pants",
+      "brand": "LuxeRoots",
+      "description": "Professional-grade Shirt perfect for shoddy training and recreational use",
+      "rating": 0.81,
+      "image": "luxeroots-fresh-wooden-pants.png",
+      "type": "hoodies",
+      "customerCategory": "women",
+      "productCategory": "tops",
+      "price": 6349.35,
+      "stock": [
+        { "size": "S", "quantity": 84 },
+        { "size": "M", "quantity": 11 },
+        { "size": "L", "quantity": 63 }
+      ]
+    },
+    {
+      "id": "urban-loom-handmade-steel-pants",
+      "name": "Handmade Steel Pants",
+      "brand": "Urban Loom",
+      "description": "The Omer Bacon is the latest in a series of shrill products from Lueilwitz, Jerde and Homenick",
+      "rating": 0.71,
+      "image": "urban-loom-handmade-steel-pants.png",
+      "type": "shoes",
+      "customerCategory": "women",
+      "productCategory": "footwear",
+      "price": 7190.21,
+      "stock": [
+        { "size": "S", "quantity": 56 },
+        { "size": "M", "quantity": 58 },
+        { "size": "L", "quantity": 32 }
+      ]
+    },
+    {
+      "id": "drift-dune-soft-ceramic-tuna",
+      "name": "Soft Ceramic Tuna",
+      "brand": "Drift & Dune",
+      "description": "Discover the regal new Soap with an exciting mix of Ceramic ingredients",
+      "rating": 1.01,
+      "image": "drift-dune-soft-ceramic-tuna.png",
+      "type": "shoes",
+      "customerCategory": "women",
+      "productCategory": "footwear",
+      "price": 5389,
+      "stock": [
+        { "size": "S", "quantity": 90 },
+        { "size": "M", "quantity": 34 },
+        { "size": "L", "quantity": 47 }
+      ]
+    },
+    {
+      "id": "drift-dune-fresh-wooden-shirt",
+      "name": "Fresh Wooden Shirt",
+      "brand": "Drift & Dune",
+      "description": "Savor the crunchy essence in our Pizza, designed for blushing culinary adventures",
+      "rating": 1.36,
+      "image": "drift-dune-fresh-wooden-shirt.png",
+      "type": "hoodies",
+      "customerCategory": "women",
+      "productCategory": "tops",
+      "price": 7286.04,
+      "stock": [
+        { "size": "S", "quantity": 76 },
+        { "size": "M", "quantity": 8 },
+        { "size": "L", "quantity": 88 }
+      ]
+    },
+    {
+      "id": "urban-loom-rustic-ceramic-hat",
+      "name": "Rustic Ceramic Hat",
+      "brand": "Urban Loom",
+      "description": "Innovative Mouse featuring glass technology and Metal construction",
+      "rating": 4.19,
+      "image": "urban-loom-rustic-ceramic-hat.png",
+      "type": "shoes",
+      "customerCategory": "women",
+      "productCategory": "footwear",
+      "price": 3015.85,
+      "stock": [
+        { "size": "S", "quantity": 20 },
+        { "size": "M", "quantity": 16 },
+        { "size": "L", "quantity": 40 }
+      ]
+    },
+    {
+      "id": "drift-dune-recycled-silk-salad",
+      "name": "Recycled Silk Salad",
+      "brand": "Drift & Dune",
+      "description": "The Garrison Hat is the latest in a series of back products from Conroy - Kuvalis",
+      "rating": 3.02,
+      "image": "drift-dune-recycled-silk-salad.png",
+      "type": "hoodies",
+      "customerCategory": "women",
+      "productCategory": "tops",
+      "price": 8244.79,
+      "stock": [
+        { "size": "S", "quantity": 42 },
+        { "size": "M", "quantity": 14 },
+        { "size": "L", "quantity": 19 }
+      ]
+    },
+    {
+      "id": "urban-loom-rustic-ceramic-chair",
+      "name": "Rustic Ceramic Chair",
+      "brand": "Urban Loom",
+      "description": "Professional-grade Hat perfect for alive training and recreational use",
+      "rating": 4.57,
+      "image": "urban-loom-rustic-ceramic-chair.png",
+      "type": "pants",
+      "customerCategory": "women",
+      "productCategory": "bottoms",
+      "price": 3573.18,
+      "stock": [
+        { "size": "S", "quantity": 65 },
+        { "size": "M", "quantity": 73 },
+        { "size": "L", "quantity": 43 }
+      ]
+    },
+    {
+      "id": "drift-dune-bespoke-gold-chicken",
+      "name": "Bespoke Gold Chicken",
+      "brand": "Drift & Dune",
+      "description": "Recycled Hat designed with Wooden for sleepy performance",
+      "rating": 4.77,
+      "image": "drift-dune-bespoke-gold-chicken.png",
+      "type": "shoes",
+      "customerCategory": "women",
+      "productCategory": "footwear",
+      "price": 9320.77,
+      "stock": [
+        { "size": "S", "quantity": 72 },
+        { "size": "M", "quantity": 75 },
+        { "size": "L", "quantity": 84 }
+      ]
+    },
+    {
+      "id": "luxeroots-sleek-aluminum-pants",
+      "name": "Sleek Aluminum Pants",
+      "brand": "LuxeRoots",
+      "description": "Featuring Curium-enhanced technology, our Bike offers unparalleled colossal performance",
+      "rating": 2.71,
+      "image": "luxeroots-sleek-aluminum-pants.png",
+      "type": "shoes",
+      "customerCategory": "women",
+      "productCategory": "footwear",
+      "price": 7547.98,
+      "stock": [
+        { "size": "S", "quantity": 65 },
+        { "size": "M", "quantity": 55 },
+        { "size": "L", "quantity": 74 }
+      ]
+    },
+    {
+      "id": "urban-loom-soft-gold-soap",
+      "name": "Soft Gold Soap",
+      "brand": "Urban Loom",
+      "description": "Recycled Tuna designed with Marble for empty performance",
+      "rating": 3.28,
+      "image": "urban-loom-soft-gold-soap.png",
+      "type": "hoodies",
+      "customerCategory": "women",
+      "productCategory": "tops",
+      "price": 4348.82,
+      "stock": [
+        { "size": "S", "quantity": 92 },
+        { "size": "M", "quantity": 16 },
+        { "size": "L", "quantity": 21 }
+      ]
+    },
+    {
+      "id": "urban-loom-oriental-metal-salad",
+      "name": "Oriental Metal Salad",
+      "brand": "Urban Loom",
+      "description": "Savor the smoky essence in our Shoes, designed for amused culinary adventures",
+      "rating": 2.1,
+      "image": "urban-loom-oriental-metal-salad.png",
+      "type": "hoodies",
+      "customerCategory": "women",
+      "productCategory": "tops",
+      "price": 9011.21,
+      "stock": [
+        { "size": "S", "quantity": 35 },
+        { "size": "M", "quantity": 56 },
+        { "size": "L", "quantity": 55 }
+      ]
+    },
+    {
+      "id": "drift-dune-tasty-gold-hat",
+      "name": "Tasty Gold Hat",
+      "brand": "Drift & Dune",
+      "description": "Savor the tender essence in our Keyboard, designed for stupendous culinary adventures",
+      "rating": 4.49,
+      "image": "drift-dune-tasty-gold-hat.png",
+      "type": "pants",
+      "customerCategory": "women",
+      "productCategory": "bottoms",
+      "price": 5247.66,
+      "stock": [
+        { "size": "S", "quantity": 80 },
+        { "size": "M", "quantity": 19 },
+        { "size": "L", "quantity": 14 }
+      ]
+    },
+    {
+      "id": "luxeroots-rustic-gold-ball",
+      "name": "Rustic Gold Ball",
+      "brand": "LuxeRoots",
+      "description": "Our gecko-friendly Chips ensures confused comfort for your pets",
+      "rating": 0.69,
+      "image": "luxeroots-rustic-gold-ball.png",
+      "type": "shoes",
+      "customerCategory": "women",
+      "productCategory": "footwear",
+      "price": 8159.53,
+      "stock": [
+        { "size": "S", "quantity": 93 },
+        { "size": "M", "quantity": 26 },
+        { "size": "L", "quantity": 52 }
+      ]
+    },
+    {
+      "id": "luxeroots-rustic-wooden-tuna",
+      "name": "Rustic Wooden Tuna",
+      "brand": "LuxeRoots",
+      "description": "New Bacon model with 60 GB RAM, 656 GB storage, and polite features",
+      "rating": 1,
+      "image": "luxeroots-rustic-wooden-tuna.png",
+      "type": "pants",
+      "customerCategory": "women",
+      "productCategory": "bottoms",
+      "price": 2559.67,
+      "stock": [
+        { "size": "S", "quantity": 8 },
+        { "size": "M", "quantity": 9 },
+        { "size": "L", "quantity": 63 }
+      ]
+    },
+    {
+      "id": "luxeroots-unbranded-aluminum-soap",
+      "name": "Unbranded Aluminum Soap",
+      "brand": "LuxeRoots",
+      "description": "Soft Chair designed with Concrete for wry performance",
+      "rating": 4.32,
+      "image": "luxeroots-unbranded-aluminum-soap.png",
+      "type": "shoes",
+      "customerCategory": "women",
+      "productCategory": "footwear",
+      "price": 360.76,
+      "stock": [
+        { "size": "S", "quantity": 77 },
+        { "size": "M", "quantity": 5 },
+        { "size": "L", "quantity": 76 }
+      ]
+    },
+    {
+      "id": "drift-dune-tasty-gold-pants",
+      "name": "Tasty Gold Pants",
+      "brand": "Drift & Dune",
+      "description": "Oberbrunner Group's most advanced Shirt technology increases standard capabilities",
+      "rating": 1.95,
+      "image": "drift-dune-tasty-gold-pants.png",
+      "type": "hoodies",
+      "customerCategory": "women",
+      "productCategory": "tops",
+      "price": 2505.29,
+      "stock": [
+        { "size": "S", "quantity": 92 },
+        { "size": "M", "quantity": 92 },
+        { "size": "L", "quantity": 66 }
+      ]
+    },
+    {
+      "id": "noxen-electronic-concrete-chair",
+      "name": "Electronic Concrete Chair",
+      "brand": "Noxen",
+      "description": "Savor the delicious essence in our Bike, designed for favorable culinary adventures",
+      "rating": 2.84,
+      "image": "noxen-electronic-concrete-chair.png",
+      "type": "shoes",
+      "customerCategory": "women",
+      "productCategory": "footwear",
+      "price": 6312.93,
+      "stock": [
+        { "size": "S", "quantity": 46 },
+        { "size": "M", "quantity": 11 },
+        { "size": "L", "quantity": 63 }
+      ]
+    },
+    {
+      "id": "velora-small-silk-mouse",
+      "name": "Small Silk Mouse",
+      "brand": "Velora",
+      "description": "Savor the sweet essence in our Bacon, designed for unpleasant culinary adventures",
+      "rating": 3.19,
+      "image": "velora-small-silk-mouse.png",
+      "type": "shoes",
+      "customerCategory": "women",
+      "productCategory": "footwear",
+      "price": 3672.87,
+      "stock": [
+        { "size": "S", "quantity": 66 },
+        { "size": "M", "quantity": 80 },
+        { "size": "L", "quantity": 41 }
+      ]
+    },
+    {
+      "id": "urban-loom-refined-rubber-chicken",
+      "name": "Refined Rubber Chicken",
+      "brand": "Urban Loom",
+      "description": "Stylish Hat designed to make you stand out with beneficial looks",
+      "rating": 3.94,
+      "image": "urban-loom-refined-rubber-chicken.png",
+      "type": "hoodies",
+      "customerCategory": "women",
+      "productCategory": "tops",
+      "price": 2808.26,
+      "stock": [
+        { "size": "S", "quantity": 4 },
+        { "size": "M", "quantity": 11 },
+        { "size": "L", "quantity": 21 }
+      ]
+    },
+    {
+      "id": "drift-dune-sleek-rubber-gloves",
+      "name": "Sleek Rubber Gloves",
+      "brand": "Drift & Dune",
+      "description": "Discover the homely new Chicken with an exciting mix of Cotton ingredients",
+      "rating": 0.45,
+      "image": "drift-dune-sleek-rubber-gloves.png",
+      "type": "hoodies",
+      "customerCategory": "women",
+      "productCategory": "tops",
+      "price": 9516.29,
+      "stock": [
+        { "size": "S", "quantity": 81 },
+        { "size": "M", "quantity": 78 },
+        { "size": "L", "quantity": 58 }
+      ]
+    },
+    {
+      "id": "noxen-bespoke-gold-sausages",
+      "name": "Bespoke Gold Sausages",
+      "brand": "Noxen",
+      "description": "Refined Towels designed with Marble for stunning performance",
+      "rating": 4.91,
+      "image": "noxen-bespoke-gold-sausages.png",
+      "type": "hoodies",
+      "customerCategory": "women",
+      "productCategory": "tops",
+      "price": 7575.34,
+      "stock": [
+        { "size": "S", "quantity": 96 },
+        { "size": "M", "quantity": 99 },
+        { "size": "L", "quantity": 35 }
+      ]
+    },
+    {
+      "id": "drift-dune-oriental-bamboo-car",
+      "name": "Oriental Bamboo Car",
+      "brand": "Drift & Dune",
+      "description": "The Lowell Ball is the latest in a series of upbeat products from Batz, Johnson and Runolfsson",
+      "rating": 0.38,
+      "image": "drift-dune-oriental-bamboo-car.png",
+      "type": "hoodies",
+      "customerCategory": "women",
+      "productCategory": "tops",
+      "price": 6799.07,
+      "stock": [
+        { "size": "S", "quantity": 92 },
+        { "size": "M", "quantity": 66 },
+        { "size": "L", "quantity": 16 }
+      ]
+    },
+    {
+      "id": "drift-dune-small-gold-mouse",
+      "name": "Small Gold Mouse",
+      "brand": "Drift & Dune",
+      "description": "Discover the shark-like agility of our Tuna, perfect for clear users",
+      "rating": 4.42,
+      "image": "drift-dune-small-gold-mouse.png",
+      "type": "pants",
+      "customerCategory": "women",
+      "productCategory": "bottoms",
+      "price": 9533.28,
+      "stock": [
+        { "size": "S", "quantity": 62 },
+        { "size": "M", "quantity": 46 },
+        { "size": "L", "quantity": 34 }
+      ]
+    },
+    {
+      "id": "velora-bespoke-cotton-hat",
+      "name": "Bespoke Cotton Hat",
+      "brand": "Velora",
+      "description": "Wolff, Herzog and Christiansen's most advanced Pants technology increases rotating capabilities",
+      "rating": 4.7,
+      "image": "velora-bespoke-cotton-hat.png",
+      "type": "hoodies",
+      "customerCategory": "women",
+      "productCategory": "tops",
+      "price": 1116.25,
+      "stock": [
+        { "size": "S", "quantity": 59 },
+        { "size": "M", "quantity": 30 },
+        { "size": "L", "quantity": 80 }
+      ]
+    },
+    {
+      "id": "drift-dune-gorgeous-metal-gloves",
+      "name": "Gorgeous Metal Gloves",
+      "brand": "Drift & Dune",
+      "description": "Stylish Bike designed to make you stand out with shoddy looks",
+      "rating": 0.52,
+      "image": "drift-dune-gorgeous-metal-gloves.png",
+      "type": "shoes",
+      "customerCategory": "women",
+      "productCategory": "footwear",
+      "price": 878.95,
+      "stock": [
+        { "size": "S", "quantity": 50 },
+        { "size": "M", "quantity": 81 },
+        { "size": "L", "quantity": 68 }
+      ]
+    },
+    {
+      "id": "noxen-electronic-steel-keyboard",
+      "name": "Electronic Steel Keyboard",
+      "brand": "Noxen",
+      "description": "The Front-line high-level firmware Chair offers reliable performance and pink design",
+      "rating": 0.05,
+      "image": "noxen-electronic-steel-keyboard.png",
+      "type": "shoes",
+      "customerCategory": "women",
+      "productCategory": "footwear",
+      "price": 3437.63,
+      "stock": [
+        { "size": "S", "quantity": 81 },
+        { "size": "M", "quantity": 77 },
+        { "size": "L", "quantity": 90 }
+      ]
+    },
+    {
+      "id": "drift-dune-oriental-rubber-bike",
+      "name": "Oriental Rubber Bike",
+      "brand": "Drift & Dune",
+      "description": "Featuring Neptunium-enhanced technology, our Ball offers unparalleled brisk performance",
+      "rating": 2.17,
+      "image": "drift-dune-oriental-rubber-bike.png",
+      "type": "shoes",
+      "customerCategory": "women",
+      "productCategory": "footwear",
+      "price": 2063.79,
+      "stock": [
+        { "size": "S", "quantity": 31 },
+        { "size": "M", "quantity": 40 },
+        { "size": "L", "quantity": 70 }
+      ]
+    },
+    {
+      "id": "urban-loom-elegant-aluminum-car",
+      "name": "Elegant Aluminum Car",
+      "brand": "Urban Loom",
+      "description": "Featuring Scandium-enhanced technology, our Ball offers unparalleled mixed performance",
+      "rating": 0.29,
+      "image": "urban-loom-elegant-aluminum-car.png",
+      "type": "hoodies",
+      "customerCategory": "women",
+      "productCategory": "tops",
+      "price": 146.33,
+      "stock": [
+        { "size": "S", "quantity": 70 },
+        { "size": "M", "quantity": 41 },
+        { "size": "L", "quantity": 64 }
+      ]
+    },
+    {
+      "id": "velora-recycled-steel-pants",
+      "name": "Recycled Steel Pants",
+      "brand": "Velora",
+      "description": "Featuring Sodium-enhanced technology, our Salad offers unparalleled infatuated performance",
+      "rating": 4.59,
+      "image": "velora-recycled-steel-pants.png",
+      "type": "pants",
+      "customerCategory": "women",
+      "productCategory": "bottoms",
+      "price": 2420.57,
+      "stock": [
+        { "size": "S", "quantity": 72 },
+        { "size": "M", "quantity": 50 },
+        { "size": "L", "quantity": 47 }
+      ]
+    },
+    {
+      "id": "luxeroots-awesome-wooden-keyboard",
+      "name": "Awesome Wooden Keyboard",
+      "brand": "LuxeRoots",
+      "description": "Stylish Salad designed to make you stand out with round looks",
+      "rating": 3.31,
+      "image": "luxeroots-awesome-wooden-keyboard.png",
+      "type": "pants",
+      "customerCategory": "women",
+      "productCategory": "bottoms",
+      "price": 6005.29,
+      "stock": [
+        { "size": "S", "quantity": 6 },
+        { "size": "M", "quantity": 97 },
+        { "size": "L", "quantity": 79 }
+      ]
+    },
+    {
+      "id": "noxen-incredible-rubber-chicken",
+      "name": "Incredible Rubber Chicken",
+      "brand": "Noxen",
+      "description": "Our snake-friendly Hat ensures wrathful comfort for your pets",
+      "rating": 0.63,
+      "image": "noxen-incredible-rubber-chicken.png",
+      "type": "pants",
+      "customerCategory": "women",
+      "productCategory": "bottoms",
+      "price": 9682.28,
+      "stock": [
+        { "size": "S", "quantity": 50 },
+        { "size": "M", "quantity": 69 },
+        { "size": "L", "quantity": 91 }
+      ]
+    },
+    {
+      "id": "luxeroots-rustic-bronze-gloves",
+      "name": "Rustic Bronze Gloves",
+      "brand": "LuxeRoots",
+      "description": "Savor the delicious essence in our Hat, designed for closed culinary adventures",
+      "rating": 4.94,
+      "image": "luxeroots-rustic-bronze-gloves.png",
+      "type": "pants",
+      "customerCategory": "women",
+      "productCategory": "bottoms",
+      "price": 1984.74,
+      "stock": [
+        { "size": "S", "quantity": 84 },
+        { "size": "M", "quantity": 82 },
+        { "size": "L", "quantity": 73 }
+      ]
+    },
+    {
+      "id": "velora-sleek-gold-hat",
+      "name": "Sleek Gold Hat",
+      "brand": "Velora",
+      "description": "Discover the stunning new Soap with an exciting mix of Bronze ingredients",
+      "rating": 2.16,
+      "image": "velora-sleek-gold-hat.png",
+      "type": "pants",
+      "customerCategory": "women",
+      "productCategory": "bottoms",
+      "price": 3362.25,
+      "stock": [
+        { "size": "S", "quantity": 80 },
+        { "size": "M", "quantity": 18 },
+        { "size": "L", "quantity": 84 }
+      ]
+    },
+    {
+      "id": "luxeroots-frozen-ceramic-car",
+      "name": "Frozen Ceramic Car",
+      "brand": "LuxeRoots",
+      "description": "The magenta Keyboard combines Tokelau aesthetics with Calcium-based durability",
+      "rating": 1.26,
+      "image": "luxeroots-frozen-ceramic-car.png",
+      "type": "pants",
+      "customerCategory": "women",
+      "productCategory": "bottoms",
+      "price": 362.45,
+      "stock": [
+        { "size": "S", "quantity": 47 },
+        { "size": "M", "quantity": 36 },
+        { "size": "L", "quantity": 86 }
+      ]
+    },
+    {
+      "id": "luxeroots-fresh-metal-chicken",
+      "name": "Fresh Metal Chicken",
+      "brand": "LuxeRoots",
+      "description": "Experience the blue brilliance of our Bacon, perfect for tense environments",
+      "rating": 1.06,
+      "image": "luxeroots-fresh-metal-chicken.png",
+      "type": "shoes",
+      "customerCategory": "women",
+      "productCategory": "footwear",
+      "price": 2814.91,
+      "stock": [
+        { "size": "S", "quantity": 26 },
+        { "size": "M", "quantity": 1 },
+        { "size": "L", "quantity": 68 }
+      ]
+    },
+    {
+      "id": "noxen-generic-bronze-gloves",
+      "name": "Generic Bronze Gloves",
+      "brand": "Noxen",
+      "description": "Discover the squirrel-like agility of our Pants, perfect for concerned users",
+      "rating": 0.67,
+      "image": "noxen-generic-bronze-gloves.png",
+      "type": "hoodies",
+      "customerCategory": "women",
+      "productCategory": "tops",
+      "price": 4998.45,
+      "stock": [
+        { "size": "S", "quantity": 57 },
+        { "size": "M", "quantity": 74 },
+        { "size": "L", "quantity": 94 }
+      ]
+    },
+    {
+      "id": "urban-loom-awesome-plastic-shirt",
+      "name": "Awesome Plastic Shirt",
+      "brand": "Urban Loom",
+      "description": "Our tangy-inspired Gloves brings a taste of luxury to your ill lifestyle",
+      "rating": 3.28,
+      "image": "urban-loom-awesome-plastic-shirt.png",
+      "type": "shoes",
+      "customerCategory": "women",
+      "productCategory": "footwear",
+      "price": 4604.79,
+      "stock": [
+        { "size": "S", "quantity": 66 },
+        { "size": "M", "quantity": 74 },
+        { "size": "L", "quantity": 73 }
+      ]
+    },
+    {
+      "id": "urban-loom-oriental-gold-computer",
+      "name": "Oriental Gold Computer",
+      "brand": "Urban Loom",
+      "description": "Kirlin - Mills's most advanced Chicken technology increases tiny capabilities",
+      "rating": 4.2,
+      "image": "urban-loom-oriental-gold-computer.png",
+      "type": "pants",
+      "customerCategory": "women",
+      "productCategory": "bottoms",
+      "price": 6801.1,
+      "stock": [
+        { "size": "S", "quantity": 42 },
+        { "size": "M", "quantity": 32 },
+        { "size": "L", "quantity": 38 }
+      ]
+    },
+    {
+      "id": "noxen-awesome-silk-shirt",
+      "name": "Awesome Silk Shirt",
+      "brand": "Noxen",
+      "description": "Ergonomic Bacon made with Granite for all-day evil support",
+      "rating": 4.35,
+      "image": "noxen-awesome-silk-shirt.png",
+      "type": "shoes",
+      "customerCategory": "women",
+      "productCategory": "footwear",
+      "price": 7784.61,
+      "stock": [
+        { "size": "S", "quantity": 25 },
+        { "size": "M", "quantity": 86 },
+        { "size": "L", "quantity": 52 }
+      ]
+    },
+    {
+      "id": "luxeroots-rustic-wooden-gloves",
+      "name": "Rustic Wooden Gloves",
+      "brand": "LuxeRoots",
+      "description": "Savor the rich essence in our Table, designed for tidy culinary adventures",
+      "rating": 0.96,
+      "image": "luxeroots-rustic-wooden-gloves.png",
+      "type": "shoes",
+      "customerCategory": "women",
+      "productCategory": "footwear",
+      "price": 3166.77,
+      "stock": [
+        { "size": "S", "quantity": 79 },
+        { "size": "M", "quantity": 60 },
+        { "size": "L", "quantity": 11 }
+      ]
+    },
+    {
+      "id": "luxeroots-awesome-plastic-chicken",
+      "name": "Awesome Plastic Chicken",
+      "brand": "LuxeRoots",
+      "description": "Professional-grade Bike perfect for ruddy training and recreational use",
+      "rating": 2.12,
+      "image": "luxeroots-awesome-plastic-chicken.png",
+      "type": "pants",
+      "customerCategory": "women",
+      "productCategory": "bottoms",
+      "price": 4078.84,
+      "stock": [
+        { "size": "S", "quantity": 29 },
+        { "size": "M", "quantity": 89 },
+        { "size": "L", "quantity": 40 }
+      ]
+    },
+    {
+      "id": "velora-awesome-gold-chair",
+      "name": "Awesome Gold Chair",
+      "brand": "Velora",
+      "description": "Our creamy-inspired Pants brings a taste of luxury to your peaceful lifestyle",
+      "rating": 0.85,
+      "image": "velora-awesome-gold-chair.png",
+      "type": "hoodies",
+      "customerCategory": "women",
+      "productCategory": "tops",
+      "price": 1264.76,
+      "stock": [
+        { "size": "S", "quantity": 77 },
+        { "size": "M", "quantity": 75 },
+        { "size": "L", "quantity": 87 }
+      ]
+    },
+    {
+      "id": "luxeroots-soft-concrete-pants",
+      "name": "Soft Concrete Pants",
+      "brand": "LuxeRoots",
+      "description": "The sleek and classic Gloves comes with tan LED lighting for smart functionality",
+      "rating": 0.85,
+      "image": "luxeroots-soft-concrete-pants.png",
+      "type": "pants",
+      "customerCategory": "women",
+      "productCategory": "bottoms",
+      "price": 7651.04,
+      "stock": [
+        { "size": "S", "quantity": 45 },
+        { "size": "M", "quantity": 56 },
+        { "size": "L", "quantity": 29 }
+      ]
+    },
+    {
+      "id": "drift-dune-intelligent-rubber-cheese",
+      "name": "Intelligent Rubber Cheese",
+      "brand": "Drift & Dune",
+      "description": "Innovative Shirt featuring immediate technology and Rubber construction",
+      "rating": 4.74,
+      "image": "drift-dune-intelligent-rubber-cheese.png",
+      "type": "pants",
+      "customerCategory": "women",
+      "productCategory": "bottoms",
+      "price": 8925.39,
+      "stock": [
+        { "size": "S", "quantity": 49 },
+        { "size": "M", "quantity": 59 },
+        { "size": "L", "quantity": 80 }
+      ]
+    },
+    {
+      "id": "velora-luxurious-metal-mouse",
+      "name": "Luxurious Metal Mouse",
+      "brand": "Velora",
+      "description": "New Salad model with 60 GB RAM, 68 GB storage, and impressive features",
+      "rating": 0.4,
+      "image": "velora-luxurious-metal-mouse.png",
+      "type": "shoes",
+      "customerCategory": "women",
+      "productCategory": "footwear",
+      "price": 8245.77,
+      "stock": [
+        { "size": "S", "quantity": 92 },
+        { "size": "M", "quantity": 77 },
+        { "size": "L", "quantity": 6 }
+      ]
+    },
+    {
+      "id": "drift-dune-practical-marble-towels",
+      "name": "Practical Marble Towels",
+      "brand": "Drift & Dune",
+      "description": "Our crunchy-inspired Pants brings a taste of luxury to your probable lifestyle",
+      "rating": 3.47,
+      "image": "drift-dune-practical-marble-towels.png",
+      "type": "hoodies",
+      "customerCategory": "women",
+      "productCategory": "tops",
+      "price": 9650.75,
+      "stock": [
+        { "size": "S", "quantity": 59 },
+        { "size": "M", "quantity": 84 },
+        { "size": "L", "quantity": 51 }
+      ]
+    },
+    {
+      "id": "velora-luxurious-marble-soap",
+      "name": "Luxurious Marble Soap",
+      "brand": "Velora",
+      "description": "Discover the rhinoceros-like agility of our Table, perfect for trustworthy users",
+      "rating": 1.82,
+      "image": "velora-luxurious-marble-soap.png",
+      "type": "pants",
+      "customerCategory": "women",
+      "productCategory": "bottoms",
+      "price": 3090.03,
+      "stock": [
+        { "size": "S", "quantity": 62 },
+        { "size": "M", "quantity": 73 },
+        { "size": "L", "quantity": 55 }
+      ]
+    },
+    {
+      "id": "luxeroots-handmade-metal-hat",
+      "name": "Handmade Metal Hat",
+      "brand": "LuxeRoots",
+      "description": "Refined Bike designed with Bronze for youthful performance",
+      "rating": 0.44,
+      "image": "luxeroots-handmade-metal-hat.png",
+      "type": "hoodies",
+      "customerCategory": "women",
+      "productCategory": "tops",
+      "price": 6138.42,
+      "stock": [
+        { "size": "S", "quantity": 81 },
+        { "size": "M", "quantity": 18 },
+        { "size": "L", "quantity": 37 }
+      ]
+    },
+    {
+      "id": "velora-tasty-bronze-pants",
+      "name": "Tasty Bronze Pants",
+      "brand": "Velora",
+      "description": "Professional-grade Hat perfect for grown training and recreational use",
+      "rating": 1.84,
+      "image": "velora-tasty-bronze-pants.png",
+      "type": "hoodies",
+      "customerCategory": "kids",
+      "productCategory": "tops",
+      "price": 9948.43,
+      "stock": [
+        { "size": "S", "quantity": 80 },
+        { "size": "M", "quantity": 28 },
+        { "size": "L", "quantity": 67 }
+      ]
+    },
+    {
+      "id": "luxeroots-generic-cotton-towels",
+      "name": "Generic Cotton Towels",
+      "brand": "LuxeRoots",
+      "description": "Savor the bitter essence in our Towels, designed for fat culinary adventures",
+      "rating": 3.2,
+      "image": "luxeroots-generic-cotton-towels.png",
+      "type": "shoes",
+      "customerCategory": "kids",
+      "productCategory": "footwear",
+      "price": 5350.99,
+      "stock": [
+        { "size": "S", "quantity": 52 },
+        { "size": "M", "quantity": 1 },
+        { "size": "L", "quantity": 83 }
+      ]
+    },
+    {
+      "id": "velora-handmade-rubber-ball",
+      "name": "Handmade Rubber Ball",
+      "brand": "Velora",
+      "description": "The magenta Fish combines Aruba aesthetics with Holmium-based durability",
+      "rating": 4.54,
+      "image": "velora-handmade-rubber-ball.png",
+      "type": "pants",
+      "customerCategory": "kids",
+      "productCategory": "bottoms",
+      "price": 5526.5,
+      "stock": [
+        { "size": "S", "quantity": 55 },
+        { "size": "M", "quantity": 13 },
+        { "size": "L", "quantity": 88 }
+      ]
+    },
+    {
+      "id": "drift-dune-soft-granite-sausages",
+      "name": "Soft Granite Sausages",
+      "brand": "Drift & Dune",
+      "description": "Stylish Fish designed to make you stand out with abandoned looks",
+      "rating": 0.36,
+      "image": "drift-dune-soft-granite-sausages.png",
+      "type": "hoodies",
+      "customerCategory": "kids",
+      "productCategory": "tops",
+      "price": 8702.27,
+      "stock": [
+        { "size": "S", "quantity": 23 },
+        { "size": "M", "quantity": 30 },
+        { "size": "L", "quantity": 90 }
+      ]
+    },
+    {
+      "id": "velora-oriental-gold-chips",
+      "name": "Oriental Gold Chips",
+      "brand": "Velora",
+      "description": "Discover the butterfly-like agility of our Pants, perfect for inexperienced users",
+      "rating": 3.65,
+      "image": "velora-oriental-gold-chips.png",
+      "type": "shoes",
+      "customerCategory": "kids",
+      "productCategory": "footwear",
+      "price": 6725.03,
+      "stock": [
+        { "size": "S", "quantity": 0 },
+        { "size": "M", "quantity": 82 },
+        { "size": "L", "quantity": 24 }
+      ]
+    },
+    {
+      "id": "drift-dune-refined-rubber-pizza",
+      "name": "Refined Rubber Pizza",
+      "brand": "Drift & Dune",
+      "description": "Discover the gorilla-like agility of our Pants, perfect for sneaky users",
+      "rating": 1.93,
+      "image": "drift-dune-refined-rubber-pizza.png",
+      "type": "shoes",
+      "customerCategory": "kids",
+      "productCategory": "footwear",
+      "price": 6190.97,
+      "stock": [
+        { "size": "S", "quantity": 57 },
+        { "size": "M", "quantity": 28 },
+        { "size": "L", "quantity": 42 }
+      ]
+    },
+    {
+      "id": "urban-loom-oriental-bamboo-sausages",
+      "name": "Oriental Bamboo Sausages",
+      "brand": "Urban Loom",
+      "description": "Experience the lavender brilliance of our Towels, perfect for confused environments",
+      "rating": 2.09,
+      "image": "urban-loom-oriental-bamboo-sausages.png",
+      "type": "pants",
+      "customerCategory": "kids",
+      "productCategory": "bottoms",
+      "price": 7225.92,
+      "stock": [
+        { "size": "S", "quantity": 89 },
+        { "size": "M", "quantity": 9 },
+        { "size": "L", "quantity": 16 }
+      ]
+    },
+    {
+      "id": "drift-dune-fantastic-concrete-keyboard",
+      "name": "Fantastic Concrete Keyboard",
+      "brand": "Drift & Dune",
+      "description": "Experience the white brilliance of our Ball, perfect for naughty environments",
+      "rating": 4.32,
+      "image": "drift-dune-fantastic-concrete-keyboard.png",
+      "type": "hoodies",
+      "customerCategory": "kids",
+      "productCategory": "tops",
+      "price": 5667.52,
+      "stock": [
+        { "size": "S", "quantity": 22 },
+        { "size": "M", "quantity": 45 },
+        { "size": "L", "quantity": 94 }
+      ]
+    },
+    {
+      "id": "drift-dune-licensed-steel-car",
+      "name": "Licensed Steel Car",
+      "brand": "Drift & Dune",
+      "description": "Professional-grade Bacon perfect for far-flung training and recreational use",
+      "rating": 0.93,
+      "image": "drift-dune-licensed-steel-car.png",
+      "type": "shoes",
+      "customerCategory": "kids",
+      "productCategory": "footwear",
+      "price": 5306.02,
+      "stock": [
+        { "size": "S", "quantity": 99 },
+        { "size": "M", "quantity": 26 },
+        { "size": "L", "quantity": 28 }
+      ]
+    },
+    {
+      "id": "velora-elegant-metal-car",
+      "name": "Elegant Metal Car",
+      "brand": "Velora",
+      "description": "Turcotte, Bosco and Romaguera's most advanced Tuna technology increases authorized capabilities",
+      "rating": 4.06,
+      "image": "velora-elegant-metal-car.png",
+      "type": "pants",
+      "customerCategory": "kids",
+      "productCategory": "bottoms",
+      "price": 6909.34,
+      "stock": [
+        { "size": "S", "quantity": 29 },
+        { "size": "M", "quantity": 66 },
+        { "size": "L", "quantity": 63 }
+      ]
+    },
+    {
+      "id": "luxeroots-awesome-rubber-towels",
+      "name": "Awesome Rubber Towels",
+      "brand": "LuxeRoots",
+      "description": "Ergonomic Pizza made with Aluminum for all-day shocked support",
+      "rating": 0.82,
+      "image": "luxeroots-awesome-rubber-towels.png",
+      "type": "pants",
+      "customerCategory": "kids",
+      "productCategory": "bottoms",
+      "price": 3287.07,
+      "stock": [
+        { "size": "S", "quantity": 98 },
+        { "size": "M", "quantity": 85 },
+        { "size": "L", "quantity": 74 }
+      ]
+    },
+    {
+      "id": "noxen-sleek-aluminum-car",
+      "name": "Sleek Aluminum Car",
+      "brand": "Noxen",
+      "description": "Savor the fluffy essence in our Chicken, designed for zany culinary adventures",
+      "rating": 4.05,
+      "image": "noxen-sleek-aluminum-car.png",
+      "type": "shoes",
+      "customerCategory": "kids",
+      "productCategory": "footwear",
+      "price": 9315.39,
+      "stock": [
+        { "size": "S", "quantity": 84 },
+        { "size": "M", "quantity": 62 },
+        { "size": "L", "quantity": 95 }
+      ]
+    },
+    {
+      "id": "urban-loom-modern-steel-pants",
+      "name": "Modern Steel Pants",
+      "brand": "Urban Loom",
+      "description": "The Dexter Car is the latest in a series of chilly products from Miller and Sons",
+      "rating": 3.04,
+      "image": "urban-loom-modern-steel-pants.png",
+      "type": "hoodies",
+      "customerCategory": "kids",
+      "productCategory": "tops",
+      "price": 4319.17,
+      "stock": [
+        { "size": "S", "quantity": 77 },
+        { "size": "M", "quantity": 19 },
+        { "size": "L", "quantity": 96 }
+      ]
+    },
+    {
+      "id": "velora-oriental-silk-bacon",
+      "name": "Oriental Silk Bacon",
+      "brand": "Velora",
+      "description": "Schaefer, Sauer and Howe's most advanced Chicken technology increases scented capabilities",
+      "rating": 2.2,
+      "image": "velora-oriental-silk-bacon.png",
+      "type": "shoes",
+      "customerCategory": "kids",
+      "productCategory": "footwear",
+      "price": 2903.25,
+      "stock": [
+        { "size": "S", "quantity": 25 },
+        { "size": "M", "quantity": 83 },
+        { "size": "L", "quantity": 37 }
+      ]
+    },
+    {
+      "id": "luxeroots-small-silk-ball",
+      "name": "Small Silk Ball",
+      "brand": "LuxeRoots",
+      "description": "The sleek and murky Pizza comes with teal LED lighting for smart functionality",
+      "rating": 2.32,
+      "image": "luxeroots-small-silk-ball.png",
+      "type": "shoes",
+      "customerCategory": "kids",
+      "productCategory": "footwear",
+      "price": 3059.93,
+      "stock": [
+        { "size": "S", "quantity": 30 },
+        { "size": "M", "quantity": 43 },
+        { "size": "L", "quantity": 91 }
+      ]
+    },
+    {
+      "id": "velora-recycled-bronze-computer",
+      "name": "Recycled Bronze Computer",
+      "brand": "Velora",
+      "description": "Savor the tangy essence in our Salad, designed for excitable culinary adventures",
+      "rating": 4.61,
+      "image": "velora-recycled-bronze-computer.png",
+      "type": "pants",
+      "customerCategory": "kids",
+      "productCategory": "bottoms",
+      "price": 2503.57,
+      "stock": [
+        { "size": "S", "quantity": 95 },
+        { "size": "M", "quantity": 26 },
+        { "size": "L", "quantity": 38 }
+      ]
+    },
+    {
+      "id": "noxen-fresh-metal-gloves",
+      "name": "Fresh Metal Gloves",
+      "brand": "Noxen",
+      "description": "Ergonomic Ball made with Metal for all-day powerful support",
+      "rating": 4.79,
+      "image": "noxen-fresh-metal-gloves.png",
+      "type": "pants",
+      "customerCategory": "kids",
+      "productCategory": "bottoms",
+      "price": 646.61,
+      "stock": [
+        { "size": "S", "quantity": 81 },
+        { "size": "M", "quantity": 82 },
+        { "size": "L", "quantity": 23 }
+      ]
+    },
+    {
+      "id": "velora-electronic-gold-shoes",
+      "name": "Electronic Gold Shoes",
+      "brand": "Velora",
+      "description": "New white Car with ergonomic design for heartfelt comfort",
+      "rating": 0.2,
+      "image": "velora-electronic-gold-shoes.png",
+      "type": "shoes",
+      "customerCategory": "kids",
+      "productCategory": "footwear",
+      "price": 7672.3,
+      "stock": [
+        { "size": "S", "quantity": 2 },
+        { "size": "M", "quantity": 44 },
+        { "size": "L", "quantity": 38 }
+      ]
+    },
+    {
+      "id": "urban-loom-small-ceramic-keyboard",
+      "name": "Small Ceramic Keyboard",
+      "brand": "Urban Loom",
+      "description": "New black Keyboard with ergonomic design for splendid comfort",
+      "rating": 2.39,
+      "image": "urban-loom-small-ceramic-keyboard.png",
+      "type": "hoodies",
+      "customerCategory": "kids",
+      "productCategory": "tops",
+      "price": 5297.14,
+      "stock": [
+        { "size": "S", "quantity": 59 },
+        { "size": "M", "quantity": 70 },
+        { "size": "L", "quantity": 37 }
+      ]
+    },
+    {
+      "id": "luxeroots-luxurious-ceramic-chips",
+      "name": "Luxurious Ceramic Chips",
+      "brand": "LuxeRoots",
+      "description": "Featuring Chromium-enhanced technology, our Salad offers unparalleled sticky performance",
+      "rating": 1.91,
+      "image": "luxeroots-luxurious-ceramic-chips.png",
+      "type": "pants",
+      "customerCategory": "kids",
+      "productCategory": "bottoms",
+      "price": 5193.88,
+      "stock": [
+        { "size": "S", "quantity": 98 },
+        { "size": "M", "quantity": 5 },
+        { "size": "L", "quantity": 56 }
+      ]
+    },
+    {
+      "id": "urban-loom-unbranded-gold-sausages",
+      "name": "Unbranded Gold Sausages",
+      "brand": "Urban Loom",
+      "description": "Discover the ostrich-like agility of our Sausages, perfect for tame users",
+      "rating": 0.09,
+      "image": "urban-loom-unbranded-gold-sausages.png",
+      "type": "pants",
+      "customerCategory": "kids",
+      "productCategory": "bottoms",
+      "price": 2477.52,
+      "stock": [
+        { "size": "S", "quantity": 90 },
+        { "size": "M", "quantity": 47 },
+        { "size": "L", "quantity": 82 }
+      ]
+    },
+    {
+      "id": "drift-dune-licensed-ceramic-pants",
+      "name": "Licensed Ceramic Pants",
+      "brand": "Drift & Dune",
+      "description": "Our snake-friendly Chips ensures authentic comfort for your pets",
+      "rating": 1.59,
+      "image": "drift-dune-licensed-ceramic-pants.png",
+      "type": "pants",
+      "customerCategory": "kids",
+      "productCategory": "bottoms",
+      "price": 5030.03,
+      "stock": [
+        { "size": "S", "quantity": 27 },
+        { "size": "M", "quantity": 51 },
+        { "size": "L", "quantity": 75 }
+      ]
+    },
+    {
+      "id": "noxen-refined-bamboo-car",
+      "name": "Refined Bamboo Car",
+      "brand": "Noxen",
+      "description": "Our sour-inspired Keyboard brings a taste of luxury to your troubled lifestyle",
+      "rating": 1.14,
+      "image": "noxen-refined-bamboo-car.png",
+      "type": "shoes",
+      "customerCategory": "kids",
+      "productCategory": "footwear",
+      "price": 2030.63,
+      "stock": [
+        { "size": "S", "quantity": 91 },
+        { "size": "M", "quantity": 60 },
+        { "size": "L", "quantity": 24 }
+      ]
+    },
+    {
+      "id": "drift-dune-rustic-cotton-chips",
+      "name": "Rustic Cotton Chips",
+      "brand": "Drift & Dune",
+      "description": "New Hat model with 93 GB RAM, 254 GB storage, and bustling features",
+      "rating": 4.08,
+      "image": "drift-dune-rustic-cotton-chips.png",
+      "type": "hoodies",
+      "customerCategory": "kids",
+      "productCategory": "tops",
+      "price": 8004.49,
+      "stock": [
+        { "size": "S", "quantity": 0 },
+        { "size": "M", "quantity": 42 },
+        { "size": "L", "quantity": 52 }
+      ]
+    },
+    {
+      "id": "urban-loom-awesome-bamboo-pizza",
+      "name": "Awesome Bamboo Pizza",
+      "brand": "Urban Loom",
+      "description": "Ergonomic Pizza made with Bamboo for all-day punctual support",
+      "rating": 0.61,
+      "image": "urban-loom-awesome-bamboo-pizza.png",
+      "type": "hoodies",
+      "customerCategory": "kids",
+      "productCategory": "tops",
+      "price": 2140.07,
+      "stock": [
+        { "size": "S", "quantity": 5 },
+        { "size": "M", "quantity": 14 },
+        { "size": "L", "quantity": 33 }
+      ]
+    },
+    {
+      "id": "luxeroots-generic-bamboo-gloves",
+      "name": "Generic Bamboo Gloves",
+      "brand": "LuxeRoots",
+      "description": "The sleek and intrepid Bacon comes with yellow LED lighting for smart functionality",
+      "rating": 0.77,
+      "image": "luxeroots-generic-bamboo-gloves.png",
+      "type": "shoes",
+      "customerCategory": "kids",
+      "productCategory": "footwear",
+      "price": 5002.28,
+      "stock": [
+        { "size": "S", "quantity": 94 },
+        { "size": "M", "quantity": 10 },
+        { "size": "L", "quantity": 31 }
+      ]
+    },
+    {
+      "id": "drift-dune-electronic-cotton-tuna",
+      "name": "Electronic Cotton Tuna",
+      "brand": "Drift & Dune",
+      "description": "Discover the poor new Chicken with an exciting mix of Gold ingredients",
+      "rating": 0.86,
+      "image": "drift-dune-electronic-cotton-tuna.png",
+      "type": "hoodies",
+      "customerCategory": "kids",
+      "productCategory": "tops",
+      "price": 5280.23,
+      "stock": [
+        { "size": "S", "quantity": 18 },
+        { "size": "M", "quantity": 34 },
+        { "size": "L", "quantity": 10 }
+      ]
+    },
+    {
+      "id": "drift-dune-handcrafted-bronze-salad",
+      "name": "Handcrafted Bronze Salad",
+      "brand": "Drift & Dune",
+      "description": "Our bitter-inspired Pants brings a taste of luxury to your authentic lifestyle",
+      "rating": 3.99,
+      "image": "drift-dune-handcrafted-bronze-salad.png",
+      "type": "pants",
+      "customerCategory": "kids",
+      "productCategory": "bottoms",
+      "price": 129.72,
+      "stock": [
+        { "size": "S", "quantity": 60 },
+        { "size": "M", "quantity": 78 },
+        { "size": "L", "quantity": 79 }
+      ]
+    },
+    {
+      "id": "velora-handcrafted-silk-soap",
+      "name": "Handcrafted Silk Soap",
+      "brand": "Velora",
+      "description": "Professional-grade Bike perfect for hopeful training and recreational use",
+      "rating": 3.89,
+      "image": "velora-handcrafted-silk-soap.png",
+      "type": "hoodies",
+      "customerCategory": "kids",
+      "productCategory": "tops",
+      "price": 3967.21,
+      "stock": [
+        { "size": "S", "quantity": 62 },
+        { "size": "M", "quantity": 27 },
+        { "size": "L", "quantity": 69 }
+      ]
+    },
+    {
+      "id": "urban-loom-practical-granite-fish",
+      "name": "Practical Granite Fish",
+      "brand": "Urban Loom",
+      "description": "Johnston Group's most advanced Shirt technology increases oily capabilities",
+      "rating": 2.38,
+      "image": "urban-loom-practical-granite-fish.png",
+      "type": "pants",
+      "customerCategory": "kids",
+      "productCategory": "bottoms",
+      "price": 5915.12,
+      "stock": [
+        { "size": "S", "quantity": 71 },
+        { "size": "M", "quantity": 85 },
+        { "size": "L", "quantity": 53 }
+      ]
+    },
+    {
+      "id": "luxeroots-recycled-granite-bacon",
+      "name": "Recycled Granite Bacon",
+      "brand": "LuxeRoots",
+      "description": "The Extended uniform initiative Salad offers reliable performance and muted design",
+      "rating": 4.59,
+      "image": "luxeroots-recycled-granite-bacon.png",
+      "type": "hoodies",
+      "customerCategory": "kids",
+      "productCategory": "tops",
+      "price": 8447.87,
+      "stock": [
+        { "size": "S", "quantity": 15 },
+        { "size": "M", "quantity": 33 },
+        { "size": "L", "quantity": 38 }
+      ]
+    },
+    {
+      "id": "noxen-soft-aluminum-ball",
+      "name": "Soft Aluminum Ball",
+      "brand": "Noxen",
+      "description": "Stylish Bacon designed to make you stand out with unique looks",
+      "rating": 4.94,
+      "image": "noxen-soft-aluminum-ball.png",
+      "type": "shoes",
+      "customerCategory": "kids",
+      "productCategory": "footwear",
+      "price": 9128.63,
+      "stock": [
+        { "size": "S", "quantity": 42 },
+        { "size": "M", "quantity": 85 },
+        { "size": "L", "quantity": 67 }
+      ]
+    },
+    {
+      "id": "luxeroots-luxurious-steel-chips",
+      "name": "Luxurious Steel Chips",
+      "brand": "LuxeRoots",
+      "description": "The black Bike combines South Sudan aesthetics with Indium-based durability",
+      "rating": 4.27,
+      "image": "luxeroots-luxurious-steel-chips.png",
+      "type": "hoodies",
+      "customerCategory": "kids",
+      "productCategory": "tops",
+      "price": 212.68,
+      "stock": [
+        { "size": "S", "quantity": 67 },
+        { "size": "M", "quantity": 90 },
+        { "size": "L", "quantity": 50 }
+      ]
+    },
+    {
+      "id": "velora-awesome-marble-chips",
+      "name": "Awesome Marble Chips",
+      "brand": "Velora",
+      "description": "Ergonomic Sausages made with Plastic for all-day recent support",
+      "rating": 2.45,
+      "image": "velora-awesome-marble-chips.png",
+      "type": "shoes",
+      "customerCategory": "kids",
+      "productCategory": "footwear",
+      "price": 9953.85,
+      "stock": [
+        { "size": "S", "quantity": 66 },
+        { "size": "M", "quantity": 60 },
+        { "size": "L", "quantity": 80 }
+      ]
+    },
+    {
+      "id": "velora-bespoke-ceramic-car",
+      "name": "Bespoke Ceramic Car",
+      "brand": "Velora",
+      "description": "Our lion-friendly Car ensures scaly comfort for your pets",
+      "rating": 3.14,
+      "image": "velora-bespoke-ceramic-car.png",
+      "type": "shoes",
+      "customerCategory": "kids",
+      "productCategory": "footwear",
+      "price": 853.66,
+      "stock": [
+        { "size": "S", "quantity": 16 },
+        { "size": "M", "quantity": 23 },
+        { "size": "L", "quantity": 80 }
+      ]
+    },
+    {
+      "id": "urban-loom-modern-concrete-soap",
+      "name": "Modern Concrete Soap",
+      "brand": "Urban Loom",
+      "description": "Savor the sour essence in our Hat, designed for swift culinary adventures",
+      "rating": 4.71,
+      "image": "urban-loom-modern-concrete-soap.png",
+      "type": "hoodies",
+      "customerCategory": "kids",
+      "productCategory": "tops",
+      "price": 2654.11,
+      "stock": [
+        { "size": "S", "quantity": 35 },
+        { "size": "M", "quantity": 0 },
+        { "size": "L", "quantity": 59 }
+      ]
+    },
+    {
+      "id": "urban-loom-rustic-wooden-fish",
+      "name": "Rustic Wooden Fish",
+      "brand": "Urban Loom",
+      "description": "Discover the panda-like agility of our Chips, perfect for cheerful users",
+      "rating": 1.89,
+      "image": "urban-loom-rustic-wooden-fish.png",
+      "type": "shoes",
+      "customerCategory": "kids",
+      "productCategory": "footwear",
+      "price": 5329.1,
+      "stock": [
+        { "size": "S", "quantity": 97 },
+        { "size": "M", "quantity": 37 },
+        { "size": "L", "quantity": 20 }
+      ]
+    },
+    {
+      "id": "noxen-licensed-marble-bike",
+      "name": "Licensed Marble Bike",
+      "brand": "Noxen",
+      "description": "Discover the turtle-like agility of our Towels, perfect for apprehensive users",
+      "rating": 0.26,
+      "image": "noxen-licensed-marble-bike.png",
+      "type": "hoodies",
+      "customerCategory": "kids",
+      "productCategory": "tops",
+      "price": 1773.76,
+      "stock": [
+        { "size": "S", "quantity": 5 },
+        { "size": "M", "quantity": 3 },
+        { "size": "L", "quantity": 84 }
+      ]
+    },
+    {
+      "id": "luxeroots-intelligent-ceramic-fish",
+      "name": "Intelligent Ceramic Fish",
+      "brand": "LuxeRoots",
+      "description": "New white Bacon with ergonomic design for quarrelsome comfort",
+      "rating": 1.33,
+      "image": "luxeroots-intelligent-ceramic-fish.png",
+      "type": "shoes",
+      "customerCategory": "kids",
+      "productCategory": "footwear",
+      "price": 905.18,
+      "stock": [
+        { "size": "S", "quantity": 51 },
+        { "size": "M", "quantity": 50 },
+        { "size": "L", "quantity": 95 }
+      ]
+    },
+    {
+      "id": "luxeroots-tasty-concrete-keyboard",
+      "name": "Tasty Concrete Keyboard",
+      "brand": "LuxeRoots",
+      "description": "New silver Tuna with ergonomic design for sturdy comfort",
+      "rating": 3.3,
+      "image": "luxeroots-tasty-concrete-keyboard.png",
+      "type": "pants",
+      "customerCategory": "kids",
+      "productCategory": "bottoms",
+      "price": 2491.15,
+      "stock": [
+        { "size": "S", "quantity": 14 },
+        { "size": "M", "quantity": 39 },
+        { "size": "L", "quantity": 62 }
+      ]
+    },
+    {
+      "id": "luxeroots-luxurious-wooden-bike",
+      "name": "Luxurious Wooden Bike",
+      "brand": "LuxeRoots",
+      "description": "The sleek and warm Bacon comes with teal LED lighting for smart functionality",
+      "rating": 0.12,
+      "image": "luxeroots-luxurious-wooden-bike.png",
+      "type": "pants",
+      "customerCategory": "kids",
+      "productCategory": "bottoms",
+      "price": 1180.34,
+      "stock": [
+        { "size": "S", "quantity": 64 },
+        { "size": "M", "quantity": 51 },
+        { "size": "L", "quantity": 98 }
+      ]
+    },
+    {
+      "id": "velora-modern-ceramic-gloves",
+      "name": "Modern Ceramic Gloves",
+      "brand": "Velora",
+      "description": "Innovative Shoes featuring mature technology and Ceramic construction",
+      "rating": 0.12,
+      "image": "velora-modern-ceramic-gloves.png",
+      "type": "shoes",
+      "customerCategory": "kids",
+      "productCategory": "footwear",
+      "price": 1320.85,
+      "stock": [
+        { "size": "S", "quantity": 43 },
+        { "size": "M", "quantity": 29 },
+        { "size": "L", "quantity": 66 }
+      ]
+    },
+    {
+      "id": "noxen-handmade-wooden-soap",
+      "name": "Handmade Wooden Soap",
+      "brand": "Noxen",
+      "description": "The Lura Shoes is the latest in a series of clumsy products from Howe Inc",
+      "rating": 3.35,
+      "image": "noxen-handmade-wooden-soap.png",
+      "type": "pants",
+      "customerCategory": "kids",
+      "productCategory": "bottoms",
+      "price": 9911.63,
+      "stock": [
+        { "size": "S", "quantity": 97 },
+        { "size": "M", "quantity": 56 },
+        { "size": "L", "quantity": 89 }
+      ]
+    },
+    {
+      "id": "urban-loom-handmade-metal-car",
+      "name": "Handmade Metal Car",
+      "brand": "Urban Loom",
+      "description": "Ergonomic Soap made with Concrete for all-day hairy support",
+      "rating": 2.2,
+      "image": "urban-loom-handmade-metal-car.png",
+      "type": "shoes",
+      "customerCategory": "kids",
+      "productCategory": "footwear",
+      "price": 7817.18,
+      "stock": [
+        { "size": "S", "quantity": 3 },
+        { "size": "M", "quantity": 40 },
+        { "size": "L", "quantity": 47 }
+      ]
+    },
+    {
+      "id": "urban-loom-handcrafted-silk-hat",
+      "name": "Handcrafted Silk Hat",
+      "brand": "Urban Loom",
+      "description": "New maroon Hat with ergonomic design for biodegradable comfort",
+      "rating": 1.72,
+      "image": "urban-loom-handcrafted-silk-hat.png",
+      "type": "hoodies",
+      "customerCategory": "kids",
+      "productCategory": "tops",
+      "price": 3257.14,
+      "stock": [
+        { "size": "S", "quantity": 61 },
+        { "size": "M", "quantity": 29 },
+        { "size": "L", "quantity": 63 }
+      ]
+    },
+    {
+      "id": "noxen-intelligent-bronze-chicken",
+      "name": "Intelligent Bronze Chicken",
+      "brand": "Noxen",
+      "description": "New Gloves model with 68 GB RAM, 217 GB storage, and dependable features",
+      "rating": 0.74,
+      "image": "noxen-intelligent-bronze-chicken.png",
+      "type": "shoes",
+      "customerCategory": "kids",
+      "productCategory": "footwear",
+      "price": 6947.8,
+      "stock": [
+        { "size": "S", "quantity": 14 },
+        { "size": "M", "quantity": 90 },
+        { "size": "L", "quantity": 64 }
+      ]
+    },
+    {
+      "id": "urban-loom-fantastic-marble-sausages",
+      "name": "Fantastic Marble Sausages",
+      "brand": "Urban Loom",
+      "description": "Ergonomic Computer made with Steel for all-day left support",
+      "rating": 3.03,
+      "image": "urban-loom-fantastic-marble-sausages.png",
+      "type": "pants",
+      "customerCategory": "kids",
+      "productCategory": "bottoms",
+      "price": 6650.84,
+      "stock": [
+        { "size": "S", "quantity": 28 },
+        { "size": "M", "quantity": 55 },
+        { "size": "L", "quantity": 69 }
+      ]
+    },
+    {
+      "id": "urban-loom-soft-concrete-cheese",
+      "name": "Soft Concrete Cheese",
+      "brand": "Urban Loom",
+      "description": "The Innovative actuating hierarchy Table offers reliable performance and uncommon design",
+      "rating": 1.47,
+      "image": "urban-loom-soft-concrete-cheese.png",
+      "type": "pants",
+      "customerCategory": "kids",
+      "productCategory": "bottoms",
+      "price": 2562.25,
+      "stock": [
+        { "size": "S", "quantity": 75 },
+        { "size": "M", "quantity": 88 },
+        { "size": "L", "quantity": 48 }
+      ]
+    },
+    {
+      "id": "urban-loom-generic-granite-chips",
+      "name": "Generic Granite Chips",
+      "brand": "Urban Loom",
+      "description": "The fuchsia Car combines San Marino aesthetics with Thallium-based durability",
+      "rating": 0.63,
+      "image": "urban-loom-generic-granite-chips.png",
+      "type": "hoodies",
+      "customerCategory": "kids",
+      "productCategory": "tops",
+      "price": 5387.86,
+      "stock": [
+        { "size": "S", "quantity": 93 },
+        { "size": "M", "quantity": 58 },
+        { "size": "L", "quantity": 7 }
+      ]
+    },
+    {
+      "id": "velora-licensed-concrete-table",
+      "name": "Licensed Concrete Table",
+      "brand": "Velora",
+      "description": "Experience the azure brilliance of our Sausages, perfect for rigid environments",
+      "rating": 0.1,
+      "image": "velora-licensed-concrete-table.png",
+      "type": "pants",
+      "customerCategory": "kids",
+      "productCategory": "bottoms",
+      "price": 9669.51,
+      "stock": [
+        { "size": "S", "quantity": 30 },
+        { "size": "M", "quantity": 80 },
+        { "size": "L", "quantity": 32 }
+      ]
+    }
+  ]
 }
