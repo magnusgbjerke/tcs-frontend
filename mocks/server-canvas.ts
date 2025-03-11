@@ -1,4 +1,6 @@
-import jsonServerCanvas from "json-server";
+/* eslint-disable */
+
+const jsonServerCanvas = require("json-server");
 const serverCanvas = jsonServerCanvas.create();
 const routerCanvas = jsonServerCanvas.router("mocks/db-canvas.json");
 const middlewaresCanvas = jsonServerCanvas.defaults();
