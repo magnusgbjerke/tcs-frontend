@@ -112,60 +112,6 @@
           "quantity": 8
         }
       ]
-    },
-    [
-      {
-        "id": "urban-loom-oriental-ceramic-ball",
-        "name": "Oriental Ceramic Ball",
-        "brand": "Urban Loom",
-        "description": "The Fully-configurable mission-critical customer loyalty Soap offers reliable performance and thick design",
-        "rating": 4.34,
-        "image": "urban-loom-oriental-ceramic-ball.png",
-        "type": "pants",
-        "customerCategory": "men",
-        "productCategory": "bottoms",
-        "price": "3808.59",
-        "stock": [
-          {
-            "size": "S",
-            "quantity": 73
-          },
-          {
-            "size": "M",
-            "quantity": 53
-          },
-          {
-            "size": "L",
-            "quantity": 49
-          }
-        ]
-      },
-      {
-        "id": "urban-loom-tasty-concrete-fish",
-        "name": "Tasty Concrete Fish",
-        "brand": "Urban Loom",
-        "description": "New lime Hat with ergonomic design for zany comfort",
-        "rating": 3.15,
-        "image": "urban-loom-tasty-concrete-fish.png",
-        "type": "shoes",
-        "customerCategory": "women",
-        "productCategory": "tops",
-        "price": "16284.05",
-        "stock": [
-          {
-            "size": "S",
-            "quantity": 48
-          },
-          {
-            "size": "M",
-            "quantity": 24
-          },
-          {
-            "size": "L",
-            "quantity": 11
-          }
-        ]
-      }
-    ]
+    }
   ]
 }

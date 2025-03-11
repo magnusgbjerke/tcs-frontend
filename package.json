@@ -4,16 +4,20 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"npm run json-server\" \"wait-on http://localhost:8080/api/server-status && next dev --turbopack\"",
+    "dev-c": "concurrently \"npm run json-server-canvas\" \"wait-on http://localhost:8080/api/server-status && next dev --turbopack\"",
     "json-server": "node mocks/server.ts",
+    "json-server-canvas": "node mocks/server-canvas.ts",
     "stop-node": "taskkill /f /im node.exe",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "preview": "next build && next start",
-    "prepare": "husky"
+    "prepare": "husky",
+    "canvas": "node mocks/canvas.js"
   },
   "dependencies": {
     "@faker-js/faker": "^9.6.0",
+    "canvas": "^3.1.0",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

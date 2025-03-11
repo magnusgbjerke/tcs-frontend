@@ -4,7 +4,22 @@ import { Breadcrumbs, BreadcrumbItem } from "@/components/ui/Breadcrumbs";
 import { Product } from "@/types/products";
 
 export async function CategoryPage({ category }: { category: string[] }) {
-  const response = await fetch("http://localhost:8080/api/products");
+  let endpoint = "";
+  switch (category.length) {
+    case 1:
+      endpoint = `http://localhost:8080/api/products?customerCategory=${category[0]}`;
+      break;
+    case 2:
+      endpoint = `http://localhost:8080/api/products?customerCategory=${category[0]}&productCategory=${category[1]}`;
+      break;
+    case 3:
+      endpoint = `http://localhost:8080/api/products?customerCategory=${category[0]}&productCategory=${category[1]}&type=${category[2]}`;
+      break;
+    default:
+      endpoint = `http://localhost:8080/api/products`;
+  }
+
+  const response = await fetch(endpoint);
   const products = await response.json();
 
   const items: BreadcrumbItem[] = [{ title: "Home", href: "/" }];
