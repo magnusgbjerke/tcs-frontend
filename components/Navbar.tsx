@@ -1,12 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { Searchbar } from "./ui/Searchbar";
 import { useState } from "react";
 import { Product } from "@/types/products";
 import { useRouter } from "next/navigation";
-import User from "@/public/assets/circle-user-round.svg";
-import Cart from "@/public/assets/shopping-cart.svg";
+import User from "@/components/ui/assets/circle-user-round.svg";
+import Cart from "@/components/ui/assets/shopping-cart.svg";
+import { Searchbar } from "@/components/ui/components/Searchbar";
 
 export const Navbar = () => {
   const [filteredData, setFilteredData] = useState<string[]>([]);

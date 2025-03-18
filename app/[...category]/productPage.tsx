@@ -1,8 +1,11 @@
-import { HangerRating } from "@/components/ui/HangerRating";
 import { Product } from "@/types/products";
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import { BreadcrumbItem, Breadcrumbs } from "@/components/ui/Breadcrumbs";
+import {
+  BreadcrumbItem,
+  Breadcrumbs,
+} from "@/components/ui/components/Breadcrumbs";
+import { HangerRating } from "@/components/ui/components/HangerRating";
 
 export async function ProductPage({ productId }: { productId: string }) {
   const response = await fetch(

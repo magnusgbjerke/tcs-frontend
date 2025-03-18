@@ -1,6 +1,9 @@
 import { ProductCard } from "@/components/ProductCard";
 import { Sidebar } from "@/components/Sidebar";
-import { Breadcrumbs, BreadcrumbItem } from "@/components/ui/Breadcrumbs";
+import {
+  Breadcrumbs,
+  BreadcrumbItem,
+} from "@/components/ui/components/Breadcrumbs";
 import { Product } from "@/types/products";
 
 export async function CategoryPage({ category }: { category: string[] }) {

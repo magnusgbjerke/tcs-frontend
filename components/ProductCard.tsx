@@ -1,10 +1,10 @@
 "use client";
 
 import { Product, Stock } from "@/types/products";
-import { Card } from "./ui/Card";
-import { HangerRating } from "./ui/HangerRating";
-import { StockIndicator } from "./ui/StockIndicator";
 import { useRouter } from "next/navigation";
+import { HangerRating } from "@/components/ui/components/HangerRating";
+import { StockIndicator } from "@/components/ui/components/StockIndicator";
+import { Card } from "@/components/ui/components/Card";
 
 interface Props {
   product: Product;
@@ -27,6 +27,8 @@ export function ProductCard({ product }: Props) {
       img={`/images/products/${product.image}`}
       onClick={() => onClickHandler()}
       pointer
+      height={960}
+      width={640}
     >
       <div className="flex flex-col gap-1">
         <p className="font-semibold text-sm">{product.brand}</p>
