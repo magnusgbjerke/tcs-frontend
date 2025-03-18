@@ -90,12 +90,12 @@ function generateProducts() {
   // ProductCategory
   ctx.fillStyle = "#000000";
   ctx.font = "40px Arial";
-  ctx.fillText(productCategory, 50, 650);
+  ctx.fillText(capitalizeFirstLetter(productCategory), 50, 650);
 
   // Type
   ctx.fillStyle = "#000000";
   ctx.font = "40px Arial";
-  ctx.fillText(type, 50, 750);
+  ctx.fillText(capitalizeFirstLetter(type), 50, 750);
 
   // Price
   ctx.fillStyle = "#000000";

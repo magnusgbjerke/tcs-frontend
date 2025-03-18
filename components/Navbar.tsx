@@ -5,6 +5,8 @@ import { Searchbar } from "./ui/Searchbar";
 import { useState } from "react";
 import { Product } from "@/types/products";
 import { useRouter } from "next/navigation";
+import User from "@/public/assets/circle-user-round.svg";
+import Cart from "@/public/assets/shopping-cart.svg";
 
 export const Navbar = () => {
   const [filteredData, setFilteredData] = useState<string[]>([]);
@@ -67,19 +69,13 @@ export const Navbar = () => {
               onClick={(item) => onClickHandler(item)}
               size="xs"
             />
-            <img
-              src={"/assets/circle-user-round.svg"}
-              width={40}
+            <User
               onClick={() => alert("user")}
-              className={`cursor-pointer`}
-              alt="1"
+              className="w-9 h-9 cursor-pointer text-primary-800"
             />
-            <img
-              src={"/assets/shopping-cart.svg"}
-              width={40}
-              onClick={() => alert("cart")}
-              className={`cursor-pointer`}
-              alt="2"
+            <Cart
+              onClick={() => alert("user")}
+              className="w-9 h-9 cursor-pointer text-primary-800"
             />
           </div>
         </section>

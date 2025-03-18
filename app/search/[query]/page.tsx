@@ -29,7 +29,7 @@ export default async function Page({
   return (
     <div>
       <p className="text-xl pt-4 pb-4">
-        User searched for: <strong>{decodeURIComponent(query)}</strong>
+        Searched for: <strong>{decodeURIComponent(query)}</strong>
       </p>
       <div className="flex">
         <Sidebar />

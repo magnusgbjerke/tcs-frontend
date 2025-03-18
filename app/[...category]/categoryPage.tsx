@@ -33,7 +33,7 @@ export async function CategoryPage({ category }: { category: string[] }) {
   return (
     <div>
       <header>
-        <Breadcrumbs items={items} />
+        <Breadcrumbs items={items} className="text-xl pt-4 pb-4" />
       </header>
       <div className="flex">
         <Sidebar />
