@@ -4,7 +4,7 @@ interface Props {
   size?: "sm" | "md" | "lg";
   placeholder: string;
   value: string;
-  onChange: (value: string) => void;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export function Input({
@@ -33,7 +33,7 @@ export function Input({
         sizeStyles[size]
       } ${className}`}
       disabled={disabled}
-      onChange={(e) => onChange(e.target.value)}
+      onChange={onChange}
       placeholder={placeholder}
     />
   );

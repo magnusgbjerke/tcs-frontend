@@ -1,6 +1,6 @@
 interface Props {
   checked?: boolean;
-  onChange: () => void;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export function Checkbox({ checked = false, onChange }: Props) {

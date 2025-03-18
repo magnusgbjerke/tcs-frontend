@@ -3,7 +3,7 @@ interface Props {
   className?: string;
   disabled?: boolean;
   size?: "sm" | "md" | "lg";
-  onClick: () => void;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 export const Button: React.FC<Props> = ({

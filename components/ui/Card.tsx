@@ -1,18 +1,28 @@
+import Image, { StaticImageData } from "next/image";
+
 interface Props {
   children: React.ReactNode;
-  img: string;
+  img: StaticImageData;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  pointer?: boolean;
 }
 
 // Picture ratio 1: 1,5
 
-export const Card: React.FC<Props> = ({ children, img }) => {
+export const Card: React.FC<Props> = ({
+  children,
+  img,
+  onClick,
+  pointer = false,
+}) => {
   return (
-    <article className="bg-primary-400 rounded w-60 shadow-md shadow-neutral-600">
-      <img
-        src={img}
-        className={`w-60 rounded shadow-md shadow-neutral-600`}
-        alt="A image"
-      />
+    <article
+      onClick={onClick}
+      className={`bg-primary-400 rounded w-60 shadow-md ${
+        pointer ? "cursor-pointer" : ""
+      }`}
+    >
+      <Image src={img} className={`w-60 rounded shadow-md`} alt="A image" />
       <div className="p-4">{children}</div>
     </article>
   );
