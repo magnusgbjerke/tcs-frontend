@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "concurrently \"npm run json-server\" \"wait-on http://localhost:8080/api/server-status && next dev --turbopack\"",
     "dev-c": "concurrently \"npm run json-server-canvas\" \"wait-on http://localhost:8080/api/server-status && next dev --turbopack\"",
-    "json-server": "node mocks/server.ts",
-    "json-server-canvas": "node mocks/server-canvas.ts",
+    "json-server": "node mocks/server.js",
+    "json-server-canvas": "node mocks/server-canvas.js",
     "stop-node": "taskkill /f /im node.exe",
     "build": "next build",
     "start": "next start",

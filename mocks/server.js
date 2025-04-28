@@ -1,9 +1,19 @@
+/* eslint-disable */
+
 const jsonServer = require("json-server");
 const server = jsonServer.create();
 const router = jsonServer.router("mocks/db.json");
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
+
+server.get("/api/products/valid-types", (req, res) => {
+  res.json({
+    customerCategory: ["men", "women", "kids"],
+    productCategory: ["tops", "bottoms", "footwear"],
+    type: ["hoodies", "t-shirt", "pants", "shoes"],
+  });
+});
 
 server.use("/api", router);
 

@@ -41,6 +41,7 @@ export async function ProductPage({ productId }: { productId: string }) {
           width={400}
           height={600}
           alt={`${product.name}`}
+          priority
           className={`rounded border-2 border-primary-400`}
         />
         <div className={`flex flex-col gap-4 ml-6 max-w-[400px]`}>

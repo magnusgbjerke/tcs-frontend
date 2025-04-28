@@ -7,6 +7,14 @@ const middlewaresCanvas = jsonServerCanvas.defaults();
 
 serverCanvas.use(middlewaresCanvas);
 
+server.get("/api/products/valid-types", (req, res) => {
+  res.json({
+    customerCategory: ["men", "women", "kids"],
+    productCategory: ["tops", "bottoms", "footwear"],
+    type: ["hoodies", "t-shirt", "pants", "shoes"],
+  });
+});
+
 serverCanvas.use("/api", routerCanvas);
 
 serverCanvas.listen(8080, () => {
