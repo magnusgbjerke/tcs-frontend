@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { CategoryPage } from "./categoryPage";
 import { ProductPage } from "./productPage";
+import { ValidTypes } from "@/types/valid-types";
 
 export default async function Page({
   params,
@@ -9,21 +10,23 @@ export default async function Page({
 }) {
   const { category } = await params;
 
-  const validCustomerCategory = ["men", "women", "kids"];
-  const validProductCategory = ["tops", "bottoms", "footwear"];
-  const validType = ["hoodies", "pants", "shoes"];
+  const response = await fetch(
+    `http://localhost:8080/api/products/valid-types`,
+  );
+
+  const validTypes: ValidTypes = await response.json();
 
   switch (category.length) {
     case 1:
-      if (validCustomerCategory.includes(category[0])) {
+      if (validTypes.customerCategory.includes(category[0])) {
         return <CategoryPage category={category} />;
       } else {
         return <ProductPage productId={category[0]} />;
       }
     case 2:
       if (
-        validProductCategory.includes(category[1]) &&
-        validCustomerCategory.includes(category[0])
+        validTypes.productCategory.includes(category[1]) &&
+        validTypes.customerCategory.includes(category[0])
       ) {
         return <CategoryPage category={category} />;
       } else {
@@ -31,8 +34,8 @@ export default async function Page({
       }
     case 3:
       if (
-        validType.includes(category[2]) &&
-        validProductCategory.includes(category[1])
+        validTypes.type.includes(category[2]) &&
+        validTypes.productCategory.includes(category[1])
       ) {
         return <CategoryPage category={category} />;
       } else {
