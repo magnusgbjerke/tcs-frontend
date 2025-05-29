@@ -1,10 +1,10 @@
 "use client";
 
-import { Product, Stock } from "@/types/products";
 import { useRouter } from "next/navigation";
 import { HangerRating } from "@/components/ui/components/HangerRating";
 import { StockIndicator } from "@/components/ui/components/StockIndicator";
 import { Card } from "@/components/ui/components/Card";
+import { Product, Stock } from "@/lib/data";
 
 interface Props {
   product: Product;
