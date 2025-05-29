@@ -1,16 +1,11 @@
-"use client";
 import Link from "next/link";
 
-export default function Custom404() {
+export default function NotFound() {
   return (
-    <div className="mx-auto text-center p-24">
-      <h2 className="p-2">Can not find the page you are looking for...</h2>
-      <p className="p-2">
-        Go back to{" "}
-        <Link href="/">
-          <strong>Home</strong>
-        </Link>
-      </p>
+    <div>
+      <h2>Not Found</h2>
+      <p>Could not find requested resource</p>
+      <Link href="/">Return Home</Link>
     </div>
   );
 }
