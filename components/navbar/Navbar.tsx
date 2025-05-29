@@ -1,28 +1,32 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
-import { Product } from "@/types/products";
 import { useRouter } from "next/navigation";
-import User from "@/components/ui/assets/circle-user-round.svg";
-import Cart from "@/components/ui/assets/shopping-cart.svg";
+import Logo from "@/components/ui/assets/logo-horizontal.svg";
 import { Searchbar } from "@/components/ui/components/Searchbar";
+import { Product } from "@/lib/data";
+import { UserButton } from "./user/UserButton";
+import { CartButton } from "./cart/CartButton";
+import { Button } from "@/components/ui/components/Button";
 
 export const Navbar = () => {
   const [filteredData, setFilteredData] = useState<string[]>([]);
+  const router = useRouter();
 
   const onChangeHandler = async (query: string) => {
     if (process.env.NODE_ENV === "development") {
-      const response = await fetch(`http://localhost:8080/api/products`);
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products`
+      );
       if (!response.ok) throw new Error("Failed to fetch users");
       const data = await response.json();
       const results = data.filter((item: Product) =>
-        item.name.toLowerCase().includes(query),
+        item.name.toLowerCase().includes(query)
       );
       setFilteredData(results);
     } else if (process.env.NODE_ENV === "production") {
       const response = await fetch(
-        `http://localhost:8080/api/products?search=${query}`,
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products?search=${query}`
       );
       if (!response.ok) throw new Error("Failed to fetch users");
       const data = await response.json();
@@ -41,45 +45,38 @@ export const Navbar = () => {
   };
 
   return (
-    <header className="bg-primary-400 max-h-[60px] justify-items-center">
-      <div className="max-w-[1440px] w-full">
-        <section className="flex justify-between items-center pt-2 pb-2">
-          <div>
-            {" "}
-            <Link href="/">
-              <strong>[Logo]</strong>
-            </Link>
-            <Link href="/men">
-              <strong>[Button: Men]</strong>
-            </Link>
-            <Link href="/women">
-              <strong>[Button: Women]</strong>
-            </Link>
-            <Link href="/kids">
-              <strong>[Button: Kids]</strong>
-            </Link>
-          </div>
-          <div className="absolute left-1/2 transform -translate-x-1/2"></div>
-          <div className="flex gap-2">
-            <Searchbar
-              placeholder={"Search for products..."}
-              data={filteredData}
-              onSearch={(query) => onSearchHandler(query)}
-              onChange={(query) => onChangeHandler(query)}
-              onClick={(item) => onClickHandler(item)}
-              size="xs"
-            />
-            <User
-              onClick={() => alert("user")}
-              className="w-9 h-9 cursor-pointer text-primary-800"
-            />
-            <Cart
-              onClick={() => alert("user")}
-              className="w-9 h-9 cursor-pointer text-primary-800"
-            />
-          </div>
-        </section>
-      </div>
+    <header className="bg-primary-400 pt-2 pb-2">
+      <section className="flex justify-between">
+        <div className="flex gap-2">
+          <Logo
+            onClick={() => router.push("/")}
+            className="w-16 hover:bg-primary-700 cursor-pointer ml-4"
+          />
+          <Button onClick={() => router.push("/men")} className="">
+            Men
+          </Button>
+
+          <Button onClick={() => router.push("/women")} className="">
+            Women
+          </Button>
+
+          <Button onClick={() => router.push("/kids")} className="">
+            Kids
+          </Button>
+        </div>
+        <div className="flex gap-4">
+          <Searchbar
+            placeholder={"Search for products..."}
+            data={filteredData}
+            onSearch={(query) => onSearchHandler(query)}
+            onChange={(query) => onChangeHandler(query)}
+            onClick={(item) => onClickHandler(item)}
+            size="xs"
+          />
+          <CartButton />
+          <UserButton />
+        </div>
+      </section>
     </header>
   );
 };
