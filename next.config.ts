@@ -38,20 +38,16 @@ const nextConfig: NextConfig = {
     return config;
   },
   // Turbopack to work with SVGR: https://nextjs.org/docs/app/api-reference/config/next-config-js/turbo#examples
-  experimental: {
-    turbo: {
-      rules: {
-        "*.svg": {
-          loaders: ["@svgr/webpack"],
-          as: "*.js",
-        },
+  turbopack: {
+    rules: {
+      "*.svg": {
+        loaders: ["@svgr/webpack"],
+        as: "*.js",
       },
     },
   },
   //Disable static page indicator
-  devIndicators: {
-    appIsrStatus: false,
-  },
+  devIndicators: false,
 };
 
 export default nextConfig;
