@@ -1,6 +1,6 @@
-import { Product } from "@/types/products";
 import { Sidebar } from "@/components/Sidebar";
 import { ProductCard } from "@/components/ProductCard";
+import { Product } from "@/lib/data";
 
 export default async function Page({
   params,
@@ -12,7 +12,9 @@ export default async function Page({
   let products: Product[] = [];
 
   if (process.env.NODE_ENV === "development") {
-    const response = await fetch(`http://localhost:8080/api/products`);
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products`,
+    );
     if (!response.ok) throw new Error("Failed to fetch users");
     const data = await response.json();
     products = data.filter((item: Product) =>
@@ -20,7 +22,7 @@ export default async function Page({
     );
   } else if (process.env.NODE_ENV === "production") {
     const response = await fetch(
-      `http://localhost:8080/api/products?search=${query}`,
+      `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products?search=${query}`,
     );
     if (!response.ok) throw new Error("Failed to fetch users");
     products = await response.json();

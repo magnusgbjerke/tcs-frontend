@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { CategoryPage } from "./categoryPage";
 import { ProductPage } from "./productPage";
-import { ValidTypes } from "@/types/valid-types";
+import { ValidTypes } from "@/lib/data";
 
 export default async function Page({
   params,
@@ -11,7 +11,7 @@ export default async function Page({
   const { category } = await params;
 
   const response = await fetch(
-    `http://localhost:8080/api/products/valid-types`,
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products/valid-types`,
   );
 
   const validTypes: ValidTypes = await response.json();
