@@ -6,13 +6,13 @@
   --background: #ffffff;
   --foreground: #000000;
 }
-
+/* dark-mode disabled
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #000000;
     --foreground: #ededed;
   }
-}
+}*/
 
 body {
   color: var(--foreground);
