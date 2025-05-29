@@ -7,7 +7,7 @@ const middlewaresCanvas = jsonServerCanvas.defaults();
 
 serverCanvas.use(middlewaresCanvas);
 
-server.get("/api/products/valid-types", (req, res) => {
+serverCanvas.get("/api/products/valid-types", (req, res) => {
   res.json({
     customerCategory: ["men", "women", "kids"],
     productCategory: ["tops", "bottoms", "footwear"],
