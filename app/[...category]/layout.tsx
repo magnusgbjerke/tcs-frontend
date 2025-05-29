@@ -1,5 +1,4 @@
-import { Product } from "@/types/products";
-import { ValidTypes } from "@/types/valid-types";
+import { Product, ValidTypes } from "@/lib/data";
 import type { Metadata } from "next";
 
 export async function generateMetadata({
@@ -10,7 +9,7 @@ export async function generateMetadata({
   const { category } = await params;
 
   const response = await fetch(
-    `http://localhost:8080/api/products/valid-types`,
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products/valid-types`,
   );
 
   const validTypes: ValidTypes = await response.json();
@@ -24,7 +23,7 @@ export async function generateMetadata({
         };
       } else {
         const response = await fetch(
-          `http://localhost:8080/api/products/${category[0]}`,
+          `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products/${category[0]}`,
         );
         if (!response.ok) {
           return {

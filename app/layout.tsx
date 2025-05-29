@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "@/styles/globals.css";
-import { Navbar } from "@/components/Navbar";
+import { AuthProvider } from "@/components/AuthProvider";
+import { Navbar } from "@/components/navbar/Navbar";
 
 const roboto = Roboto({
   weight: "400",
@@ -22,15 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.className} antialiased`}>
-        <div className="">
+        <AuthProvider>
           <Navbar />
           <main className="justify-items-center">
             <div className="max-w-[1440px] w-full">{children}</div>
           </main>
-          <footer className="justify-items-center bg-stone-500 h-[112px]">
-            <div className="max-w-[1440px] w-full">Footer</div>
-          </footer>
-        </div>
+        </AuthProvider>
       </body>
     </html>
   );
