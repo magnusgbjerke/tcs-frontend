@@ -1,4 +1,3 @@
-import { Product } from "@/types/products";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import {
@@ -6,10 +5,11 @@ import {
   Breadcrumbs,
 } from "@/components/ui/components/Breadcrumbs";
 import { HangerRating } from "@/components/ui/components/HangerRating";
+import { Product } from "@/lib/data";
 
 export async function ProductPage({ productId }: { productId: string }) {
   const response = await fetch(
-    `http://localhost:8080/api/products/${productId}`,
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products/${productId}`,
   );
 
   if (!response.ok) {
@@ -33,7 +33,7 @@ export async function ProductPage({ productId }: { productId: string }) {
   return (
     <>
       <header>
-        <Breadcrumbs items={items} className="text-xl mt-4 mb-4" />
+        <Breadcrumbs items={items} className="text-xl pt-4 pb-4" />
       </header>
       <div className={`flex justify-center p-8`}>
         <Image

@@ -4,22 +4,22 @@ import {
   Breadcrumbs,
   BreadcrumbItem,
 } from "@/components/ui/components/Breadcrumbs";
-import { Product } from "@/types/products";
+import { Product } from "@/lib/data";
 
 export async function CategoryPage({ category }: { category: string[] }) {
   let endpoint = "";
   switch (category.length) {
     case 1:
-      endpoint = `http://localhost:8080/api/products?customerCategory=${category[0]}`;
+      endpoint = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products?customerCategory=${category[0]}`;
       break;
     case 2:
-      endpoint = `http://localhost:8080/api/products?customerCategory=${category[0]}&productCategory=${category[1]}`;
+      endpoint = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products?customerCategory=${category[0]}&productCategory=${category[1]}`;
       break;
     case 3:
-      endpoint = `http://localhost:8080/api/products?customerCategory=${category[0]}&productCategory=${category[1]}&type=${category[2]}`;
+      endpoint = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products?customerCategory=${category[0]}&productCategory=${category[1]}&type=${category[2]}`;
       break;
     default:
-      endpoint = `http://localhost:8080/api/products`;
+      endpoint = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products`;
   }
 
   const response = await fetch(endpoint);
@@ -34,20 +34,31 @@ export async function CategoryPage({ category }: { category: string[] }) {
   }, "");
 
   return (
-    <div>
+    <>
       <header>
         <Breadcrumbs items={items} className="text-xl pt-4 pb-4" />
       </header>
       <div className="flex">
         <Sidebar />
-        <div className="flex flex-wrap gap-10">
-          {products.map((product: Product, index: number) => (
-            <div key={index}>
-              <ProductCard product={product} />
-            </div>
-          ))}
+        <div className="grid grid-cols-4 gap-10">
+          {products.length === 0 ? (
+            <>
+              <div className="text-center text-gray-500">
+                No products found.
+              </div>
+              <div className="text-center text-gray-500 w-[640px] h-[960px]"></div>
+              <div className="text-center text-gray-500 w-[640px] h-[960px]"></div>
+              <div className="text-center text-gray-500 w-[640px] h-[960px]"></div>
+            </>
+          ) : (
+            products.map((product: Product, index: number) => (
+              <div key={index}>
+                <ProductCard product={product} />
+              </div>
+            ))
+          )}
         </div>
       </div>
-    </div>
+    </>
   );
 }
