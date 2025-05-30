@@ -1,4 +1,4 @@
-import { Product, ValidTypes } from "@/lib/data";
+import { getPath, Product, ValidTypes } from "@/lib/data";
 import type { Metadata } from "next";
 
 export async function generateMetadata({
@@ -8,9 +8,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { category } = await params;
 
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products/valid-types`,
-  );
+  const response = await fetch(getPath("/api/product/valid-types"));
 
   const validTypes: ValidTypes = await response.json();
 
@@ -23,7 +21,7 @@ export async function generateMetadata({
         };
       } else {
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products/${category[0]}`,
+          `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/product/${category[0]}`,
         );
         if (!response.ok) {
           return {

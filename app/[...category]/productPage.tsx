@@ -9,7 +9,7 @@ import { Product } from "@/lib/data";
 
 export async function ProductPage({ productId }: { productId: string }) {
   const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products/${productId}`,
+    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/product/${productId}`,
   );
 
   if (!response.ok) {

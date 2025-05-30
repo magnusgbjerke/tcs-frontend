@@ -1,16 +1,12 @@
 "use client";
 
-import { Product, Stock } from "@/types/products";
 import { useRouter } from "next/navigation";
 import { HangerRating } from "@/components/ui/components/HangerRating";
 import { StockIndicator } from "@/components/ui/components/StockIndicator";
 import { Card } from "@/components/ui/components/Card";
+import { Product, Stock } from "@/lib/data";
 
-interface Props {
-  product: Product;
-}
-
-export function ProductCard({ product }: Props) {
+export function ProductCard(product: Product) {
   function largestStock(stocks: Stock[]) {
     const temp: number[] = [];
     stocks.forEach((x) => temp.push(x.quantity));

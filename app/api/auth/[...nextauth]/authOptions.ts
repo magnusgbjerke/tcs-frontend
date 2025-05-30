@@ -59,7 +59,6 @@ export const authOptions: NextAuthOptions = {
       account: Account | null;
     }): Promise<CustomToken> {
       const now = Date.now();
-      console.log(Date.now());
 
       // Initial sign-in
       if (account && user) {

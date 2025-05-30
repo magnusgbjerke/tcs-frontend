@@ -10,16 +10,16 @@ export async function CategoryPage({ category }: { category: string[] }) {
   let endpoint = "";
   switch (category.length) {
     case 1:
-      endpoint = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products?customerCategory=${category[0]}`;
+      endpoint = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/product?customerCategory=${category[0]}`;
       break;
     case 2:
-      endpoint = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products?customerCategory=${category[0]}&productCategory=${category[1]}`;
+      endpoint = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/product?customerCategory=${category[0]}&productCategory=${category[1]}`;
       break;
     case 3:
-      endpoint = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products?customerCategory=${category[0]}&productCategory=${category[1]}&type=${category[2]}`;
+      endpoint = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/product?customerCategory=${category[0]}&productCategory=${category[1]}&type=${category[2]}`;
       break;
     default:
-      endpoint = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products`;
+      endpoint = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/product`;
   }
 
   const response = await fetch(endpoint);
@@ -53,7 +53,7 @@ export async function CategoryPage({ category }: { category: string[] }) {
           ) : (
             products.map((product: Product, index: number) => (
               <div key={index}>
-                <ProductCard product={product} />
+                <ProductCard {...product} />
               </div>
             ))
           )}

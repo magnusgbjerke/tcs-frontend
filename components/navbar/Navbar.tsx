@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Logo from "@/components/ui/assets/logo-horizontal.svg";
 import { Searchbar } from "@/components/ui/components/Searchbar";
-import { Product } from "@/lib/data";
+import { getPath, Product } from "@/lib/data";
 import { UserButton } from "./user/UserButton";
 import { CartButton } from "./cart/CartButton";
 import { Button } from "@/components/ui/components/Button";
@@ -15,18 +15,16 @@ export const Navbar = () => {
 
   const onChangeHandler = async (query: string) => {
     if (process.env.NODE_ENV === "development") {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products`
-      );
+      const response = await fetch(getPath("/api/product"));
       if (!response.ok) throw new Error("Failed to fetch users");
       const data = await response.json();
       const results = data.filter((item: Product) =>
-        item.name.toLowerCase().includes(query)
+        item.name.toLowerCase().includes(query),
       );
       setFilteredData(results);
     } else if (process.env.NODE_ENV === "production") {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products?search=${query}`
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/product?search=${query}`,
       );
       if (!response.ok) throw new Error("Failed to fetch users");
       const data = await response.json();

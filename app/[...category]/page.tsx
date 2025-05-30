@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { CategoryPage } from "./categoryPage";
 import { ProductPage } from "./productPage";
-import { ValidTypes } from "@/lib/data";
+import { getPath, ValidTypes } from "@/lib/data";
 
 export default async function Page({
   params,
@@ -10,9 +10,7 @@ export default async function Page({
 }) {
   const { category } = await params;
 
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products/valid-types`,
-  );
+  const response = await fetch(getPath("/api/product/valid-types"));
 
   const validTypes: ValidTypes = await response.json();
 

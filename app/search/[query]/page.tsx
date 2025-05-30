@@ -13,7 +13,7 @@ export default async function Page({
 
   if (process.env.NODE_ENV === "development") {
     const response = await fetch(
-      `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products`,
+      `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/product`,
     );
     if (!response.ok) throw new Error("Failed to fetch users");
     const data = await response.json();
@@ -22,7 +22,7 @@ export default async function Page({
     );
   } else if (process.env.NODE_ENV === "production") {
     const response = await fetch(
-      `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products?search=${query}`,
+      `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/product?search=${query}`,
     );
     if (!response.ok) throw new Error("Failed to fetch users");
     products = await response.json();
@@ -38,7 +38,7 @@ export default async function Page({
         <div className="flex flex-wrap gap-10">
           {products.map((product: Product, index: number) => (
             <div key={index}>
-              <ProductCard product={product} />
+              <ProductCard {...product} />
             </div>
           ))}
         </div>

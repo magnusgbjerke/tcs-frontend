@@ -7,7 +7,7 @@ const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
 
-server.get("/api/products/valid-types", (req, res) => {
+server.get("/api/product/valid-types", (req, res) => {
   res.json({
     customerCategory: ["men", "women", "kids"],
     productCategory: ["tops", "bottoms", "footwear"],
