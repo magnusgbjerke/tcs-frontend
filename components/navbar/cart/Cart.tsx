@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/components/Button";
 import { CreateOrder, ErrorResponse, getPath, Order } from "@/lib/data";
 import { isJsonServerRunning } from "@/lib/isJsonServerRunning";
 import { useSession } from "next-auth/react";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Cart() {
   const [data, setData] = useState<Order>();
