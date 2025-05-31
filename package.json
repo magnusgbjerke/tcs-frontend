@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"npm run json-server\" \"wait-on http://localhost:8080/api/server-status && next dev --turbopack\"",
-    "dev-c": "concurrently \"npm run json-server-canvas\" \"wait-on http://localhost:8080/api/server-status && next dev --turbopack\"",
+    "dev": "next dev --turbopack",
+    "dev-m": "concurrently \"npm run json-server\" \"wait-on http://localhost:8080/api/server-status && next dev --turbopack\"",
+    "dev-m-c": "concurrently \"npm run json-server-canvas\" \"wait-on http://localhost:8080/api/server-status && next dev --turbopack\"",
     "json-server": "node mocks/server.js",
     "json-server-canvas": "node mocks/server-canvas.js",
     "stop-node": "taskkill /f /im node.exe",
@@ -18,13 +19,15 @@
   "dependencies": {
     "@faker-js/faker": "^9.6.0",
     "@floating-ui/react": "^0.27.9",
+    "@reduxjs/toolkit": "^2.8.2",
     "canvas": "^3.1.0",
     "jwt-decode": "^4.0.0",
     "keycloak-js": "^26.1.4",
     "next": "^15.3.2",
     "next-auth": "^4.24.11",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
