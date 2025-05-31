@@ -65,11 +65,28 @@
       }
     },
     {
+      "id": "6630d115-3a33-494f-9747-a4604dced5b3",
       "username": "user1@gmail.com",
       "enabled": true,
       "email": "user1@gmail.com",
       "firstName": "user1Navn1",
       "lastName": "user1Etternavn1",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": ["default-roles-tcs-realm"]
+    },
+    {
+      "id": "b4ce3e95-2fe8-45ed-a88c-2351c085addf",
+      "username": "user2@gmail.com",
+      "enabled": true,
+      "email": "user2@gmail.com",
+      "firstName": "user2Navn2",
+      "lastName": "user2Etternavn2",
       "credentials": [
         {
           "type": "password",
