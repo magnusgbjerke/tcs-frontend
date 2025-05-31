@@ -1,10 +1,5 @@
 ## Getting Started
 
-This project supports both development and production modes.
-
-- Development mode uses mock data and doesn't connect to the backend.
-- Production mode is intended to work alongside the tcs-backend project.
-
 ### Prerequisites
 
 - Node.js must be installed.
@@ -36,26 +31,36 @@ docker run --name keycloak -d -p 8081:8081 keycloak
 
 ### Running in Development Mode
 
-There are two development options:
+There are three ways to run the project during development:
 
 1. Realistic images with a smaller dataset
 
-   This mode provides a more polished visual experience, but uses a limited dataset.
+   Uses JSON Server (disconnected from backend) with polished, realistic images but a limited dataset.
+
+   ```bash
+   cd tcs-frontend
+
+   npm run dev-m
+   ```
+
+2. Canvas-generated images with a larger dataset
+
+   Uses JSON Server (disconnected from backend) with canvas-generated images and a more extensive dataset.
+
+   ```bash
+   cd tcs-frontend
+
+   npm run dev-m-c
+   ```
+
+3. Connect directly to the backend
+
+   Runs the frontend connected to the real backend API.
 
    ```bash
    cd tcs-frontend
 
    npm run dev
-   ```
-
-2. Canvas-generated images with a larger dataset
-
-   This version uses canvas-generated images and includes a more extensive dataset.
-
-   ```bash
-   cd tcs-frontend
-
-   npm run dev-c
    ```
 
 ### Running in Production Mode
