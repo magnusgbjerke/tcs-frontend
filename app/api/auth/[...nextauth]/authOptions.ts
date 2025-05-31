@@ -5,6 +5,11 @@ import { NextAuthOptions, User, Account } from "next-auth";
 import KeycloakProvider from "next-auth/providers/keycloak";
 
 async function refreshAccessToken(token: CustomToken): Promise<CustomToken> {
+  if (!token.refreshToken) {
+    console.error("No refresh token available");
+    return { ...token, error: "RefreshAccessTokenError" };
+  }
+
   try {
     const url = `${process.env.NEXT_PUBLIC_KEYCLOAK_ISSUER}/protocol/openid-connect/token`;
 
@@ -12,7 +17,7 @@ async function refreshAccessToken(token: CustomToken): Promise<CustomToken> {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({
-        client_id: process.env.KEYCLOAK_CLIENT_ID ?? "",
+        client_id: process.env.NEXT_PUBLIC_KEYCLOAK_CLIENT_ID ?? "",
         client_secret: process.env.KEYCLOAK_CLIENT_SECRET ?? "",
         grant_type: "refresh_token",
         refresh_token: token.refreshToken as string,
@@ -27,6 +32,7 @@ async function refreshAccessToken(token: CustomToken): Promise<CustomToken> {
       accessToken: refreshedTokens.access_token,
       accessTokenExpires: Date.now() + refreshedTokens.expires_in * 1000,
       refreshToken: refreshedTokens.refresh_token ?? token.refreshToken,
+      error: undefined, // Clear any previous errors
     };
   } catch (error) {
     console.error("Refresh token error:", error);
@@ -45,7 +51,7 @@ export const authOptions: NextAuthOptions = {
   ],
   session: {
     strategy: "jwt",
-    maxAge: 15 * 60, // 15 minutes - match Keycloak token lifespan
+    maxAge: 15 * 60, // 15 minutes
     updateAge: 14 * 60, // Update 1 minute before expiration
   },
   callbacks: {
@@ -62,32 +68,28 @@ export const authOptions: NextAuthOptions = {
 
       // Initial sign-in
       if (account && user) {
-        if (!account.expires_at)
-          throw new Error("Missing expires_at on account");
+        if (!account.expires_at || !account.access_token) {
+          console.error("Missing token data in account", account);
+          throw new Error("Invalid account data");
+        }
 
-        const decoded = jwtDecode<KeycloakJwtPayload>(
-          account.access_token ?? "",
-        );
+        const decoded = jwtDecode<KeycloakJwtPayload>(account.access_token);
         return {
+          ...token,
           accessToken: account.access_token,
-          accessTokenExpires: now + account.expires_at * 1000,
+          accessTokenExpires: account.expires_at * 1000, // Convert to milliseconds
           refreshToken: account.refresh_token,
           user,
           roles: decoded.resource_access?.["tcs-client"]?.roles || [],
         };
       }
 
-      // Token still valid
+      // Return valid token if not expired
       if (token.accessTokenExpires && now < token.accessTokenExpires) {
         return token;
       }
 
-      // Token expired + refresh failed
-      if (token.error) {
-        throw new Error("Refresh token failed");
-      }
-
-      // Refresh token
+      // Attempt token refresh
       return refreshAccessToken(token);
     },
 
@@ -98,11 +100,13 @@ export const authOptions: NextAuthOptions = {
       session: CustomSession;
       token: CustomToken;
     }): Promise<CustomSession> {
-      session.user = token.user;
-      session.accessToken = token.accessToken;
-      session.roles = token.roles || [];
-      session.error = token.error;
-      return session;
+      return {
+        ...session,
+        user: token.user,
+        accessToken: token.accessToken,
+        roles: token.roles || [],
+        error: token.error,
+      };
     },
   },
 };
