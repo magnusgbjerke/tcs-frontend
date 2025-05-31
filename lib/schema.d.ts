@@ -138,19 +138,19 @@ export interface components {
     };
     Order: {
       /** Format: date-time */
-      orderCreated?: string;
-      orderLines?: components["schemas"]["OrderLine"][];
-      paid?: boolean;
+      orderCreated: string;
+      orderLines: components["schemas"]["OrderLine"][];
+      paid: boolean;
     };
     OrderLine: {
-      product?: components["schemas"]["Product"];
+      product: components["schemas"]["Product"];
       /** @example M */
-      sizeName?: string;
+      sizeName: string;
       /**
        * Format: int32
        * @example 3
        */
-      quantity?: number;
+      quantity: number;
     };
     Product: {
       /** @example velora-houndstooth-blazer-i-regular-fit */
