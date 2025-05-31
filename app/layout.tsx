@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "@/styles/globals.css";
-import { AuthProvider } from "@/components/AuthProvider";
+import { AuthProvider } from "@/components/provider/AuthProvider";
 import { Navbar } from "@/components/navbar/Navbar";
+import ReduxProvider from "@/components/provider/ReduxProvider";
 
 const roboto = Roboto({
   weight: "400",
@@ -23,12 +24,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.className} antialiased`}>
-        <AuthProvider>
-          <Navbar />
-          <main className="justify-items-center">
-            <div className="max-w-[1440px] w-full">{children}</div>
-          </main>
-        </AuthProvider>
+        <ReduxProvider>
+          <AuthProvider>
+            <Navbar />
+            <main className="justify-items-center">
+              <div className="max-w-[1440px] w-full">{children}</div>
+            </main>
+          </AuthProvider>
+        </ReduxProvider>
       </body>
     </html>
   );
