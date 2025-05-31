@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useFloating, offset, flip, shift } from "@floating-ui/react";
-import User from "@/components/ui/assets/circle-user-round.svg";
+import UserSVG from "@/components/ui/assets/circle-user-round.svg";
 import { useSession } from "next-auth/react";
 import { Login } from "./Login";
 import { Logout } from "./Logout";
@@ -55,13 +55,13 @@ export function UserButton() {
 
   return (
     <>
-      <User
+      <UserSVG
         ref={refs.setReference}
         onClick={() => {
           setOpen(!open);
           update();
         }}
-        className="w-9 h-9 cursor-pointer text-primary-800 mr-4"
+        className="w-9 h-9 cursor-pointer text-primary-800 select-none focus:outline-none mr-4"
       />
 
       {open && (
@@ -72,7 +72,7 @@ export function UserButton() {
             top: y ?? 0,
             left: x ?? 0,
           }}
-          className="z-10 mt-2 w-56 p-4 bg-white rounded shadow-lg border border-gray-200"
+          className="z-10 mt-2 min-w-[12rem] p-4 bg-white rounded-2xl shadow-2xl border border-gray-200 space-y-4"
         >
           {!session && (
             <>

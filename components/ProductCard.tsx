@@ -29,7 +29,7 @@ export function ProductCard(product: Product) {
       <div className="flex flex-col gap-1">
         <p className="font-semibold text-sm">{product.brand}</p>
         <p className="truncate cursor-default ">{product.name}</p>
-        <p className="font-bold">{product.price},-</p>
+        <p className="font-bold">${product.price}</p>
         <HangerRating
           averageRating={product.rating}
           disabled

@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useFloating, offset, flip, shift } from "@floating-ui/react";
-import Cart from "@/components/ui/assets/shopping-cart.svg";
+import CartSVG from "@/components/ui/assets/shopping-cart.svg";
+import { useSession } from "next-auth/react";
+import { Login } from "../user/Login";
+import { Registration } from "../user/Registration";
+import Cart from "./Cart";
 
 export function CartButton() {
   const [open, setOpen] = useState(false);
+  const { data: session } = useSession();
 
   const { x, y, strategy, update, refs } = useFloating({
     placement: "bottom",
@@ -50,13 +55,13 @@ export function CartButton() {
 
   return (
     <>
-      <Cart
+      <CartSVG
         ref={refs.setReference}
         onClick={() => {
           setOpen(!open);
           update();
         }}
-        className="w-9 h-9 cursor-pointer text-primary-800"
+        className="w-9 h-9 cursor-pointer text-primary-800 select-none focus:outline-none"
       />
       {open && (
         <div
@@ -66,9 +71,17 @@ export function CartButton() {
             top: y ?? 0,
             left: x ?? 0,
           }}
-          className="z-10 mt-2 w-56 p-4 bg-white rounded shadow-lg border border-gray-200"
+          className="z-10 mt-2 min-w-[24rem] p-4 bg-white rounded-2xl shadow-2xl border border-gray-200 space-y-4"
         >
-          ss
+          {!session && (
+            <>
+              <p>You are not logged in</p>
+              <Login />
+              <p>New user?</p>
+              <Registration />
+            </>
+          )}
+          {session?.roles?.includes("USER") && <Cart />}
         </div>
       )}
     </>

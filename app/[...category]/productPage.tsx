@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/components/Breadcrumbs";
 import { HangerRating } from "@/components/ui/components/HangerRating";
 import { Product } from "@/lib/data";
+import AddToCart from "@/components/AddToCart";
 
 export async function ProductPage({ productId }: { productId: string }) {
   const response = await fetch(
@@ -47,12 +48,20 @@ export async function ProductPage({ productId }: { productId: string }) {
         <div className={`flex flex-col gap-4 ml-6 max-w-[400px]`}>
           <p className={`text-3xl`}>{product.name}</p>
           <p>
-            <i>{product.description}</i>
+            Brand: <strong>{product.brand}</strong>
           </p>
           <p>
-            For: <strong>{product.customerCategory}</strong>
+            For:{" "}
+            <strong>
+              {product.customerCategory.charAt(0).toUpperCase() +
+                product.customerCategory.slice(1)}
+            </strong>
           </p>
-          <p className="font-bold">{product.price},-</p>
+          <p>
+            <i>{product.description}</i>
+          </p>
+
+          <p className="font-bold">${product.price}</p>
 
           <HangerRating
             averageRating={product.rating}
@@ -60,6 +69,7 @@ export async function ProductPage({ productId }: { productId: string }) {
             onClick={() => undefined}
             width={50}
           />
+          <AddToCart product={product} />
         </div>
       </div>
     </>
