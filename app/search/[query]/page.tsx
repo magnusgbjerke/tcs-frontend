@@ -1,6 +1,7 @@
 import { Sidebar } from "@/components/Sidebar";
 import { ProductCard } from "@/components/ProductCard";
 import { Product } from "@/lib/data";
+import { isJsonServerRunning } from "@/lib/isJsonServerRunning";
 
 export default async function Page({
   params,
@@ -11,20 +12,23 @@ export default async function Page({
 
   let products: Product[] = [];
 
-  if (process.env.NODE_ENV === "development") {
-    const response = await fetch(
-      `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/product`,
-    );
-    if (!response.ok) throw new Error("Failed to fetch users");
+  const jsonServerUp = await isJsonServerRunning();
+
+  if (jsonServerUp) {
+    // Fetch from JSON Server
+    const response = await fetch(`http://localhost:8080/api/product`);
+    if (!response.ok)
+      throw new Error("Failed to fetch products from JSON Server");
     const data = await response.json();
     products = data.filter((item: Product) =>
-      item.name.toLowerCase().includes(query),
+      item.name.toLowerCase().includes(query.toLowerCase()),
     );
-  } else if (process.env.NODE_ENV === "production") {
+  } else {
+    // Fallback to backend
     const response = await fetch(
       `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/product?search=${query}`,
     );
-    if (!response.ok) throw new Error("Failed to fetch users");
+    if (!response.ok) throw new Error("Failed to fetch products from backend");
     products = await response.json();
   }
 
