@@ -1,11 +1,12 @@
 /* eslint-disable */
+// npx ts-node mocks/canvas.ts
 
 const { faker } = require("@faker-js/faker");
 const { createCanvas } = require("canvas");
 
 function generateProducts() {
   const validCustomerCategory = ["men", "women", "kids"];
-  const validType = ["hoodies", "pants", "shoes"];
+  const validType = ["t-shirt", "hoodie", "pants", "shoes"];
   const validBrands = [
     "Velora",
     "Drift & Dune",
@@ -22,7 +23,10 @@ function generateProducts() {
   const type = faker.helpers.arrayElement(validType);
   let productCategory = "";
   switch (type) {
-    case "hoodies":
+    case "hoodie":
+      productCategory = "tops";
+      break;
+    case "t-shirt":
       productCategory = "tops";
       break;
     case "pants":
@@ -34,7 +38,7 @@ function generateProducts() {
     default:
       break;
   }
-  const price = faker.number.float({ min: 50, max: 10000, fractionDigits: 2 });
+  const price = faker.number.float({ multipleOf: 0.25, min: 10, max: 90 });
   const quantity1 = faker.number.int({ min: 0, max: 100 });
   const quantity2 = faker.number.int({ min: 0, max: 100 });
   const quantity3 = faker.number.int({ min: 0, max: 100 });
@@ -126,20 +130,20 @@ function generateProducts() {
   };
 }
 
-function textFormatter(name) {
+function textFormatter(name: string) {
   return name
     .toLowerCase() // Convert to lowercase
     .replace(/[^a-z0-9]+/g, "-") // Replace non-alphanumeric characters with hyphens
     .replace(/^-+|-+$/g, ""); // Remove leading/trailing hyphens
 }
 
-function capitalizeFirstLetter(word) {
+function capitalizeFirstLetter(word: string) {
   if (!word) return "";
   return word.charAt(0).toUpperCase() + word.slice(1);
 }
 
 async function fetchData() {
-  const products = faker.helpers.multiple(generateProducts, { count: 2 });
+  const products = faker.helpers.multiple(generateProducts, { count: 50 });
   console.log(JSON.stringify(products));
 }
 fetchData();
