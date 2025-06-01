@@ -1,6 +1,6 @@
-import FilledHangerSVG from "@/assets/filled-hanger.svg";
-import HalfFilledHangerSVG from "@/assets/half-filled-hanger.svg";
-import HangerSVG from "@/assets/hanger.svg";
+import FilledHangerSVG from "@/components/ui/assets/filled-hanger.svg";
+import HalfFilledHangerSVG from "@/components/ui/assets/half-filled-hanger.svg";
+import HangerSVG from "@/components/ui/assets/hanger.svg";
 
 interface PropsHanger {
   type: "filled" | "half" | "empty";
