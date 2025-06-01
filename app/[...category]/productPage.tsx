@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/components/Breadcrumbs";
 import { HangerRating } from "@/components/ui/components/HangerRating";
 import { Product } from "@/lib/data";
-import AddToCart from "@/components/AddToCart";
+import { AddToCart } from "@/components/AddToCart";
 
 export async function ProductPage({ productId }: { productId: string }) {
   const response = await fetch(
@@ -36,7 +36,7 @@ export async function ProductPage({ productId }: { productId: string }) {
       <header>
         <Breadcrumbs items={items} className="text-xl pt-4 pb-4" />
       </header>
-      <div className={`flex justify-center p-8`}>
+      <div className="flex justify-center p-8 cursor-default">
         <Image
           src={`/images/products/${product.image}`}
           width={400}

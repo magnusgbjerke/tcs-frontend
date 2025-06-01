@@ -39,13 +39,17 @@ export default async function Page({
       </p>
       <div className="flex">
         <Sidebar />
-        <div className="flex flex-wrap gap-10">
-          {products.map((product: Product, index: number) => (
-            <div key={index}>
-              <ProductCard {...product} />
-            </div>
-          ))}
-        </div>
+        {products.length !== 0 ? (
+          <div className="flex flex-wrap gap-10">
+            {products.map((product: Product, index: number) => (
+              <div key={index}>
+                <ProductCard {...product} />
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p>No products found.</p>
+        )}
       </div>
     </div>
   );
