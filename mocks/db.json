@@ -29,24 +29,24 @@
           ]
         },
         "sizeName": "M",
-        "quantity": 6
+        "quantity": 2
       },
       {
         "product": {
-          "id": "noxen-cargo-joggers-i-elastic-waist",
-          "name": "Cargo Joggers i Elastic Waist",
-          "brand": "Noxen",
-          "description": "Sporty joggers with a comfortable elastic waistband and multiple pockets for a functional and stylish look.",
-          "rating": 4.2,
-          "image": "hoodie-detroit.jpeg",
+          "id": "velora-houndstooth-blazer-i-regular-fit",
+          "name": "Houndstooth Blazer i Regular Fit",
+          "brand": "Velora",
+          "description": "A stylish and sophisticated houndstooth-patterned blazer with a regular fit, perfect for both casual and formal occasions.",
+          "rating": 3.7,
+          "image": "hoodie-axe.jpeg",
           "type": "hoodies",
           "customerCategory": "men",
           "productCategory": "tops",
-          "price": 199,
+          "price": 799,
           "stock": [
             {
               "size": "M",
-              "quantity": 14
+              "quantity": 5
             },
             {
               "size": "S",
@@ -54,60 +54,34 @@
             }
           ]
         },
-        "sizeName": "L",
-        "quantity": 4
+        "sizeName": "S",
+        "quantity": 1
       },
       {
         "product": {
-          "id": "noxen-cargo-joggers-i-elastic-waist",
-          "name": "Cargo Joggers i Elastic Waist",
-          "brand": "Noxen",
-          "description": "Sporty joggers with a comfortable elastic waistband and multiple pockets for a functional and stylish look.",
-          "rating": 4.2,
-          "image": "hoodie-detroit.jpeg",
+          "id": "drift-&-dune-oversized-hoodie-i-kangaroo-pocket",
+          "name": "Oversized Hoodie i Kangaroo Pocket",
+          "brand": "Drift & Dune",
+          "description": "An oversized hoodie made from soft fleece, featuring a cozy kangaroo pocket to keep your hands warm during chilly days.",
+          "rating": 4.5,
+          "image": "hoodie-black-leg.webp",
           "type": "hoodies",
           "customerCategory": "men",
           "productCategory": "tops",
-          "price": 199,
+          "price": 599,
           "stock": [
             {
               "size": "S",
-              "quantity": 5
+              "quantity": 15
             },
             {
               "size": "M",
-              "quantity": 14
+              "quantity": 15
             }
           ]
         },
-        "sizeName": "M",
-        "quantity": 2
-      },
-      {
-        "product": {
-          "id": "urban-loom-graphic-tee-i-vintage-wash",
-          "name": "Graphic Tee i Vintage Wash",
-          "brand": "Urban Loom",
-          "description": "A vintage-style graphic tee made from 100% organic cotton, featuring a relaxed fit and soft feel.",
-          "rating": 4.8,
-          "image": "t-shirt-2020.jpeg",
-          "type": "t-shirt",
-          "customerCategory": "men",
-          "productCategory": "tops",
-          "price": 249,
-          "stock": [
-            {
-              "size": "S",
-              "quantity": 0
-            },
-            {
-              "size": "M",
-              "quantity": 0
-            }
-          ]
-        },
-        "sizeName": "M",
-        "quantity": 2
+        "sizeName": "S",
+        "quantity": 1
       }
     ],
     "paid": false
