@@ -1,99 +1,122 @@
 "use client";
 
-import React from "react";
-import { ErrorResponse, getPath, Order, Product } from "@/lib/data";
-import { useOrderHandlers } from "@/lib/updateOrderOnServer";
-
-import { setOrder } from "@/store/orderSlice";
+import React, { useState } from "react";
+import { Product } from "@/lib/data";
+import { useOrderHandlers } from "@/lib/hook/useOrderHandlers";
 import { RootState } from "@/store/store";
-import { useSession } from "next-auth/react";
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
+import { Button } from "./ui/components/Button";
+import { useFetchOrder } from "@/lib/hook/useFetchOrder";
 
 interface AddToCartProps {
   product: Product;
 }
 
-export default function AddToCart({ product }: AddToCartProps) {
-  const { handleAddItem, handleQuantityChange } = useOrderHandlers();
+export function AddToCart({ product }: AddToCartProps) {
+  const { handleRemoveItem, handleAddItem, handleQuantityChange } =
+    useOrderHandlers();
   const order = useSelector((state: RootState) => state.order.order);
-  const { data: session } = useSession();
-  const dispatch = useDispatch();
-  useEffect(() => {
-    async function fetchData() {
-      if (!session?.accessToken) return;
-      try {
-        const response = await fetch(getPath("/api/order"), {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${session.accessToken}`,
-          },
-        });
 
-        if (response.ok) {
-          const order: Order = await response.json();
-          dispatch(setOrder(order));
-        } else {
-          const errorData: ErrorResponse = await response.json();
-          alert(errorData.message);
-        }
-      } catch (error) {
-        console.error("Failed to send to API:", error);
-      }
-    }
-    fetchData();
-  }, [session?.accessToken, dispatch]);
+  // Fetch orders
+  useFetchOrder();
 
-  // Find if the product already exists in the order
-  const orderLine = order?.orderLines.find(
-    (line) => line.product.id === product.id,
+  // Dynamically get sizes from product stock
+  const availableSizes = product.stock
+    .filter((item) => item.quantity > 0)
+    .map((item) => item.size);
+
+  // Default to first available size if possible
+  const [selectedSize, setSelectedSize] = useState<string>(
+    availableSizes[0] || "",
   );
 
+  if (availableSizes.length === 0) {
+    return <p className="text-red-500">Out of stock</p>;
+  }
+
   return (
-    <div>
-      {order && orderLine ? (
-        <div className="inline-flex items-center border border-gray-300 rounded w-28 select-none">
+    <div className="flex flex-col gap-2">
+      <div className="flex gap-2">
+        {availableSizes.map((size) => (
           <button
-            onClick={() => {
-              const index = order.orderLines.findIndex(
-                (line) => line.product.id === product.id,
-              );
-              if (index !== -1) {
-                const currentQty = order.orderLines[index].quantity;
-                if (currentQty > 1) {
-                  handleQuantityChange(index, currentQty - 1);
-                }
-              }
-            }}
-            className="flex-1 h-9 bg-gray-200 text-lg rounded-l hover:bg-gray-300"
-            aria-label="Decrease quantity"
+            key={size}
+            className={`px-3 py-1 border rounded ${
+              selectedSize === size
+                ? "bg-black text-white"
+                : "bg-white text-black border-gray-300"
+            }`}
+            onClick={() => setSelectedSize(size)}
           >
-            −
+            {size}
           </button>
-          <div className="flex-1 text-center text-base select-none">
-            {orderLine?.quantity}
-          </div>
-          <button
-            onClick={() => {
-              const index = order.orderLines.findIndex(
-                (line) => line.product.id === product.id,
-              );
-              if (index !== -1) {
-                handleQuantityChange(
-                  index,
-                  order.orderLines[index].quantity + 1,
-                );
-              }
-            }}
-            className="flex-1 h-9 bg-gray-200 text-lg rounded-r hover:bg-gray-300"
-            aria-label="Increase quantity"
-          >
-            +
-          </button>
-        </div>
-      ) : (
-        <button onClick={() => handleAddItem(product, "M", 1)}>Add Item</button>
+        ))}
+      </div>
+
+      <p className="text-sm text-gray-500">Selected size: {selectedSize}</p>
+      <div className="flex items-center justify-between">
+        <Button
+          onClick={() => handleAddItem(product, selectedSize, 1)}
+          className="px-4 py-2 bg-black text-white rounded hover:bg-gray-800 "
+        >
+          Add Item
+        </Button>
+      </div>
+      {order && (
+        <>
+          {order.orderLines
+            .filter((line) => line.product.id === product.id)
+            .map((line) => (
+              <div
+                key={`${line.product.id}-${line.sizeName}`}
+                className="flex gap-4"
+              >
+                <div className="inline-flex items-center border border-gray-300 rounded w-28 select-none">
+                  <button
+                    onClick={() => {
+                      if (line.quantity > 1) {
+                        handleQuantityChange(
+                          line.product.id,
+                          line.sizeName,
+                          line.quantity - 1,
+                        );
+                      }
+                    }}
+                    className="flex-1 h-9 bg-gray-200 text-lg rounded-l hover:bg-gray-300"
+                    aria-label="Decrease quantity"
+                  >
+                    −
+                  </button>
+                  <div className="flex-1 text-center text-base select-none">
+                    {line.quantity}
+                  </div>
+                  <button
+                    onClick={() => {
+                      handleQuantityChange(
+                        line.product.id,
+                        line.sizeName,
+                        line.quantity + 1,
+                      );
+                    }}
+                    className="flex-1 h-9 bg-gray-200 text-lg rounded-r hover:bg-gray-300"
+                    aria-label="Increase quantity"
+                  >
+                    +
+                  </button>
+                  <div className="flex-1 text-center text-sm font-semibold select-none">
+                    {line.sizeName}
+                  </div>
+                </div>
+                <button
+                  onClick={() =>
+                    handleRemoveItem(line.product.id, line.sizeName)
+                  }
+                  className="mt-1 text-red-500 text-sm hover:underline"
+                >
+                  Remove
+                </button>
+              </div>
+            ))}
+        </>
       )}
     </div>
   );

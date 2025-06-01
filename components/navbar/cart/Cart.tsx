@@ -1,13 +1,13 @@
 "use client";
 
 import { Button } from "@/components/ui/components/Button";
-import { ErrorResponse, getPath, Order } from "@/lib/data";
-import { useOrderHandlers } from "@/lib/updateOrderOnServer";
+import { ErrorResponse, getPath } from "@/lib/data";
+import { useFetchOrder } from "@/lib/hook/useFetchOrder";
+import { useOrderHandlers } from "@/lib/hook/useOrderHandlers";
 
 import { setOrder } from "@/store/orderSlice";
 import { RootState } from "@/store/store";
 import { useSession } from "next-auth/react";
-import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 export default function Cart() {
@@ -16,36 +16,40 @@ export default function Cart() {
   const dispatch = useDispatch();
   const { handleRemoveItem, handleQuantityChange } = useOrderHandlers();
 
-  useEffect(() => {
-    async function fetchData() {
-      if (!session?.accessToken) return;
-      try {
-        const response = await fetch(getPath("/api/order"), {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${session.accessToken}`,
-          },
-        });
-
-        if (response.ok) {
-          const order: Order = await response.json();
-          dispatch(setOrder(order));
-        } else {
-          const errorData: ErrorResponse = await response.json();
-          alert(errorData.message);
-        }
-      } catch (error) {
-        console.error("Failed to send to API:", error);
-      }
-    }
-    fetchData();
-  }, [session?.accessToken]);
+  // Fetch orders
+  useFetchOrder();
 
   const total = order?.orderLines?.reduce(
     (acc, item) => acc + item.product.price * item.quantity,
     0,
   );
+
+  const checkout = async () => {
+    if (!session?.accessToken) {
+      console.error("No access token. User might not be logged in.");
+      return;
+    }
+
+    try {
+      const response = await fetch(getPath("/api/order/checkout"), {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${session.accessToken}`,
+        },
+      });
+
+      if (response.ok) {
+        // Clear order
+        dispatch(setOrder(null));
+      } else {
+        const errorData: ErrorResponse = await response.json();
+        alert(errorData.message);
+      }
+    } catch (error) {
+      console.error("Failed to send to API:", error);
+    }
+  };
 
   return (
     <>
@@ -66,12 +70,18 @@ export default function Cart() {
                   min={1}
                   value={item.quantity}
                   onChange={(e) =>
-                    handleQuantityChange(index, parseInt(e.target.value))
+                    handleQuantityChange(
+                      item.product.id,
+                      item.sizeName,
+                      parseInt(e.target.value),
+                    )
                   }
                   className="w-16 px-2 py-1 border rounded-md text-sm"
                 />
                 <button
-                  onClick={() => handleRemoveItem(index)}
+                  onClick={() =>
+                    handleRemoveItem(item.product.id, item.sizeName)
+                  }
                   className="text-red-500 text-sm hover:underline"
                 >
                   Remove
@@ -80,7 +90,7 @@ export default function Cart() {
             </div>
             <div className="text-right">
               <p className="text-md font-semibold">
-                ${item.product.price * item.quantity}
+                ${(item.product.price * item.quantity).toFixed(2)}
               </p>
               <p className="text-sm text-gray-400">
                 ${item.product.price} each
@@ -92,9 +102,13 @@ export default function Cart() {
 
       <div className="flex justify-between items-center mt-6">
         <span className="text-xl font-bold">Total:</span>
-        <span className="text-xl font-bold">${total}</span>
+        <span className="text-xl font-bold">
+          ${total?.toFixed(2) ?? "0.00"}
+        </span>
       </div>
-      <Button className="w-full">Checkout</Button>
+      <Button onClick={checkout} className="w-full">
+        Checkout
+      </Button>
     </>
   );
 }
