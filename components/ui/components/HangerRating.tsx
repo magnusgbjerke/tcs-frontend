@@ -1,21 +1,28 @@
-import FilledHangerSVG from "@/components/ui/assets/filled-hanger.svg";
-import HalfFilledHangerSVG from "@/components/ui/assets/half-filled-hanger.svg";
-import HangerSVG from "@/components/ui/assets/hanger.svg";
+import FilledHangerSVG from "@/assets/filled-hanger.svg";
+import HalfFilledHangerSVG from "@/assets/half-filled-hanger.svg";
+import HangerSVG from "@/assets/hanger.svg";
 
 interface PropsHanger {
   type: "filled" | "half" | "empty";
   disabled?: boolean;
   onClick?: () => void;
   width?: number;
+  className?: string;
 }
 
-function Hanger({ type = "filled", disabled, onClick, width }: PropsHanger) {
+function Hanger({
+  type = "filled",
+  disabled,
+  onClick,
+  width,
+  className,
+}: PropsHanger) {
   switch (type) {
     case "empty":
       return (
         <HangerSVG
           onClick={disabled ? undefined : onClick}
-          className=""
+          className={className}
           style={{
             height: `${width}px`,
             width: `${width}px`,
@@ -27,7 +34,7 @@ function Hanger({ type = "filled", disabled, onClick, width }: PropsHanger) {
       return (
         <HalfFilledHangerSVG
           onClick={disabled ? undefined : onClick}
-          className=""
+          className={className}
           style={{
             height: `${width}px`,
             width: `${width}px`,
@@ -39,7 +46,7 @@ function Hanger({ type = "filled", disabled, onClick, width }: PropsHanger) {
       return (
         <FilledHangerSVG
           onClick={disabled ? undefined : onClick}
-          className=""
+          className={className}
           style={{
             height: `${width}px`,
             width: `${width}px`,
@@ -57,6 +64,7 @@ interface PropsRating {
   disabled?: boolean;
   onClick: (index: number) => void;
   width?: number;
+  className?: string;
 }
 
 export function HangerRating({
@@ -64,6 +72,7 @@ export function HangerRating({
   disabled = false,
   onClick,
   width = 100,
+  className,
 }: PropsRating) {
   function roundHalf(num: number) {
     return Math.round(num * 2) / 2;
@@ -198,6 +207,7 @@ export function HangerRating({
             disabled={disabled}
             onClick={() => onClick(index)}
             width={width}
+            className={className}
           />
         </div>
       ))}
