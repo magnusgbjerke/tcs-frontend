@@ -35,6 +35,7 @@ export function ProductCard(product: Product) {
           disabled
           onClick={() => undefined}
           width={30}
+          className="fill-primary-800"
         />
         <StockIndicator stock={largestStock(product.stock)} />
       </div>
