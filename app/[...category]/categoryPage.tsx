@@ -39,7 +39,7 @@ export async function CategoryPage({ category }: { category: string[] }) {
         <Breadcrumbs items={items} className="text-xl pt-4 pb-4" />
       </header>
       <div className="flex">
-        <Sidebar />
+        <Sidebar customerCategory={category[0]} />
         <div className="grid grid-cols-4 gap-10">
           {products.length === 0 ? (
             <>

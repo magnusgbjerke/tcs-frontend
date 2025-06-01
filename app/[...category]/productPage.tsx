@@ -68,6 +68,7 @@ export async function ProductPage({ productId }: { productId: string }) {
             disabled
             onClick={() => undefined}
             width={50}
+            className="fill-primary-800"
           />
           <AddToCart product={product} />
         </div>
