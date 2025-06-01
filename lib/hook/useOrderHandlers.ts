@@ -20,6 +20,7 @@ export function useOrderHandlers() {
     if (!session?.accessToken) return;
 
     const jsonServerUp = await isJsonServerRunning();
+    console.log("JSON-Server up: " + jsonServerUp);
 
     const orderPayload: Order | CreateOrder[] = jsonServerUp
       ? updatedOrder
@@ -50,21 +51,32 @@ export function useOrderHandlers() {
     }
   }
 
-  const handleQuantityChange = (index: number, quantity: number) => {
+  const handleQuantityChange = (
+    productId: string,
+    sizeName: string,
+    quantity: number,
+  ) => {
     if (!order) return;
-    const newOrderLines = order.orderLines.map((line, i) =>
-      i === index ? { ...line, quantity } : line,
-    );
+
+    const newOrderLines = order.orderLines.map((line) => {
+      if (line.product.id === productId && line.sizeName === sizeName) {
+        return { ...line, quantity };
+      }
+      return line;
+    });
+
     const updated = { ...order, orderLines: newOrderLines };
-    dispatch(setOrder(updated));
     updateOrderOnServer(updated);
   };
 
-  const handleRemoveItem = (index: number) => {
+  const handleRemoveItem = (productId: string, sizeName: string) => {
     if (!order) return;
-    const newOrderLines = order.orderLines.filter((_, i) => i !== index);
+
+    const newOrderLines = order.orderLines.filter(
+      (line) => !(line.product.id === productId && line.sizeName === sizeName),
+    );
+
     const updated = { ...order, orderLines: newOrderLines };
-    dispatch(setOrder(updated));
     updateOrderOnServer(updated);
   };
 
@@ -96,7 +108,6 @@ export function useOrderHandlers() {
     }
 
     const updatedOrder = { ...order, orderLines: newOrderLines };
-    dispatch(setOrder(updatedOrder));
     updateOrderOnServer(updatedOrder);
   };
 
