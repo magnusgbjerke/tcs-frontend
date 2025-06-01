@@ -5,8 +5,9 @@ import {
   Breadcrumbs,
 } from "@/components/ui/components/Breadcrumbs";
 import { HangerRating } from "@/components/ui/components/HangerRating";
-import { Product } from "@/lib/data";
+import { Product, Stock } from "@/lib/data";
 import { AddToCart } from "@/components/AddToCart";
+import { StockIndicator } from "@/components/ui/components/StockIndicator";
 
 export async function ProductPage({ productId }: { productId: string }) {
   const response = await fetch(
@@ -30,6 +31,13 @@ export async function ProductPage({ productId }: { productId: string }) {
       href: `/${product.customerCategory}/${product.productCategory}/${product.type}`,
     },
   ];
+
+  function largestStock(stocks: Stock[]) {
+    const temp: number[] = [];
+    stocks.forEach((x) => temp.push(x.quantity));
+    const highest = Math.max(...temp);
+    return highest;
+  }
 
   return (
     <>
@@ -70,6 +78,7 @@ export async function ProductPage({ productId }: { productId: string }) {
             width={50}
             className="fill-primary-800"
           />
+          <StockIndicator stock={largestStock(product.stock)} />
           <AddToCart product={product} />
         </div>
       </div>
