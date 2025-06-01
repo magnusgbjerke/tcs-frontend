@@ -31,7 +31,7 @@ export function AddToCart({ product }: AddToCartProps) {
   );
 
   if (availableSizes.length === 0) {
-    return <p className="text-red-500">Out of stock</p>;
+    return null;
   }
 
   return (
