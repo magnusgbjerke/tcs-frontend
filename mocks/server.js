@@ -11,7 +11,7 @@ server.get("/api/product/valid-types", (req, res) => {
   res.json({
     customerCategory: ["men", "women", "kids"],
     productCategory: ["tops", "bottoms", "footwear"],
-    type: ["hoodies", "t-shirt", "pants", "shoes"],
+    type: ["hoodie", "t-shirt", "pants", "shoes"],
   });
 });
 
