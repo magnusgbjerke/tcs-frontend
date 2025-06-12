@@ -1,4 +1,3 @@
-import { Sidebar } from "@/components/Sidebar";
 import { ProductCard } from "@/components/ProductCard";
 import { Product } from "@/lib/data";
 import { isJsonServerRunning } from "@/lib/isJsonServerRunning";
@@ -38,7 +37,6 @@ export default async function Page({
         Searched for: <strong>{decodeURIComponent(query)}</strong>
       </p>
       <div className="flex">
-        <Sidebar />
         {products.length !== 0 ? (
           <div className="flex flex-wrap gap-10">
             {products.map((product: Product, index: number) => (

@@ -11,7 +11,7 @@ export async function Sidebar({
   const validTypes: ValidTypes = await response.json();
 
   return (
-    <aside className="p-4 min-w-[240px]">
+    <aside className="pl-4 pr-4 min-w-[240px]">
       <nav>
         <ul className="space-y-4 border-t pt-2 pb-2">
           <p className="font-bold">Categories</p>
