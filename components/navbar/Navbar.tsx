@@ -8,13 +8,16 @@ import { getPath, Product } from "@/lib/data";
 import { UserButton } from "./user/UserButton";
 import { CartButton } from "./cart/CartButton";
 import { Button } from "@/components/ui/components/Button";
+import { isJsonServerRunning } from "@/lib/isJsonServerRunning";
 
 export const Navbar = () => {
   const [filteredData, setFilteredData] = useState<string[]>([]);
   const router = useRouter();
 
   const onChangeHandler = async (query: string) => {
-    if (process.env.NODE_ENV === "development") {
+    const jsonServerUp = await isJsonServerRunning();
+
+    const JsonServerFunction = async () => {
       const response = await fetch(getPath("/api/product"));
       if (!response.ok) throw new Error("Failed to fetch users");
       const data = await response.json();
@@ -22,13 +25,21 @@ export const Navbar = () => {
         item.name.toLowerCase().includes(query),
       );
       setFilteredData(results);
-    } else if (process.env.NODE_ENV === "production") {
+    };
+
+    const BackendFunction = async () => {
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/product?search=${query}`,
       );
       if (!response.ok) throw new Error("Failed to fetch users");
       const data = await response.json();
       setFilteredData(data);
+    };
+
+    if (jsonServerUp) {
+      await JsonServerFunction();
+    } else {
+      await BackendFunction();
     }
   };
 
